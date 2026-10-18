@@ -1,0 +1,60 @@
+[    1777ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[    1915ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[    2786ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0
+[    4046ms] Transition was skipped. New ViewTransition started
+[    4240ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 1827130ms] [ERROR] ERROR TypeError: Cannot set properties of null (setting 'controls')
+    at t.onChangeUpdate (http://10.10.20.41/my-holiday-working.component-ER5OGRUR.js:1:4338)
+    at http://10.10.20.41/my-holiday-working.component-ER5OGRUR.js:1:6545
+    at bl (http://10.10.20.41/chunk-DCQX6U25.js:7:106320)
+    at Object.r [as next] (http://10.10.20.41/chunk-DCQX6U25.js:7:106168)
+    at Wo.next (http://10.10.20.41/chunk-DCQX6U25.js:3:3101)
+    at fe._next (http://10.10.20.41/chunk-DCQX6U25.js:3:2784)
+    at fe.next (http://10.10.20.41/chunk-DCQX6U25.js:3:2511)
+    at http://10.10.20.41/chunk-DCQX6U25.js:3:5569
+    at Ct (http://10.10.20.41/chunk-DCQX6U25.js:3:2204)
+    at qi.next (http://10.10.20.41/chunk-DCQX6U25.js:3:5408) @ http://10.10.20.41/chunk-DCQX6U25.js:6
+[ 2187169ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 2187466ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[ 2188931ms] Transition was skipped. New ViewTransition started
+[ 2189406ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 2189715ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://10.10.20.41:443/v1.0/user/list/data?records=all:0
+[ 2190467ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 2190707ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[ 2191720ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0
+[ 2192991ms] Transition was skipped. New ViewTransition started
+[ 2193417ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 3498630ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 3499610ms] Transition was skipped. New ViewTransition started
+[ 3500105ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 3503913ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 4299609ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 4299752ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 4299847ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 4300438ms] Transition was skipped. New ViewTransition started
+[ 5087891ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 5087993ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 5088088ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 5088704ms] Transition was skipped. New ViewTransition started
+[ 5733247ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 5733392ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 5733486ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[ 5734063ms] Transition was skipped. New ViewTransition started
+[ 5747976ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 5748200ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[ 5749849ms] Transition was skipped. New ViewTransition started
+[ 5750357ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 5751576ms] [INFO] PWA true @ http://10.10.20.41/main-523A3IYX.js:332
+[ 5751820ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[ 5752897ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0
+[ 5754145ms] Transition was skipped. New ViewTransition started
+[ 5754224ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GA64SU4Y.js:937
+[ 5757396ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-AEHWSF25.js:1281
+[12049841ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_UNREACHABLE @ http://10.10.20.41:443/v1.0/admin/checkIP:0
+[12049952ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_UNREACHABLE @ http://10.10.20.41/error-internal-server.component-OAGR7XV2.js:0
+[12049958ms] [INFO] TypeError: Failed to fetch dynamically imported module: http://10.10.20.41/error-internal-server.component-OAGR7XV2.js @ http://10.10.20.41/main-523A3IYX.js:332
+[12049974ms] [ERROR] ERROR TypeError: Failed to fetch dynamically imported module: http://10.10.20.41/error-internal-server.component-OAGR7XV2.js @ http://10.10.20.41/chunk-DCQX6U25.js:6
+[12468356ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ http://10.10.20.41:443/v1.0/admin/checkIP:0
+[12491527ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ http://10.10.20.41/error-internal-server.component-OAGR7XV2.js:0
+[12491531ms] [INFO] TypeError: Failed to fetch dynamically imported module: http://10.10.20.41/error-internal-server.component-OAGR7XV2.js @ http://10.10.20.41/main-523A3IYX.js:332
+[12491543ms] [ERROR] ERROR TypeError: Failed to fetch dynamically imported module: http://10.10.20.41/error-internal-server.component-OAGR7XV2.js @ http://10.10.20.41/chunk-DCQX6U25.js:6

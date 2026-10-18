@@ -1,0 +1,15 @@
+[     480ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[     510ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-NAIF5NTC.js:1281
+[     525ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-NAIF5NTC.js:1281
+[     533ms] [ERROR] ERROR TypeError: Cannot read properties of undefined (reading 'hasTabs')
+    at t.setTabs (http://10.10.20.41/it-ticket.component-ZGKFBYO6.js:3:54594)
+    at http://10.10.20.41/it-ticket.component-ZGKFBYO6.js:3:57271
+    at bl (http://10.10.20.41/chunk-DCQX6U25.js:7:106320)
+    at Object.r [as next] (http://10.10.20.41/chunk-DCQX6U25.js:7:106215)
+    at Wo.next (http://10.10.20.41/chunk-DCQX6U25.js:3:3101)
+    at fe._next (http://10.10.20.41/chunk-DCQX6U25.js:3:2784)
+    at fe.next (http://10.10.20.41/chunk-DCQX6U25.js:3:2511)
+    at http://10.10.20.41/chunk-DCQX6U25.js:3:5569
+    at Ct (http://10.10.20.41/chunk-DCQX6U25.js:3:2204)
+    at qi.next (http://10.10.20.41/chunk-DCQX6U25.js:3:5408) @ http://10.10.20.41/chunk-DCQX6U25.js:6
+[     581ms] Transition was skipped. New ViewTransition started

@@ -1,0 +1,385 @@
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - link [ref=e84] [cursor=pointer]:
+          - /url: /my/dashboard
+          - img "app logo" [ref=e85]
+        - heading "My Dashboard" [level=1] [ref=e86]
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - button "🤝 Ask your Buddy" [ref=e90] [cursor=pointer]
+            - button "" [ref=e93] [cursor=pointer]
+            - generic [ref=e96]:
+              - button "" [ref=e98] [cursor=pointer]
+              - generic [ref=e100]: "9"
+          - 'button "My Leaves: 0" [ref=e102] [cursor=pointer]':
+            - generic [aria-hidden] [ref=e103]: 
+            - generic [ref=e104]: "My Leaves:"
+            - generic [ref=e105]: "0"
+          - generic [ref=e106]:
+            - generic [ref=e107]: "In: 08:54:54"
+            - generic [ref=e108]: "Spent: 03:09:16"
+          - button "8" [ref=e109] [cursor=pointer]
+          - button [ref=e110] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e111]: 
+          - button "avatar Super Admin Superadmin " [active] [ref=e113] [cursor=pointer]:
+            - img "avatar" [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]: Super Admin
+              - generic [ref=e117]: Superadmin
+            - generic [ref=e118]: 
+      - list [ref=e121]:
+        - listitem [ref=e122]:
+          - link " Dashboard" [ref=e123] [cursor=pointer]:
+            - /url: /my/dashboard
+            - generic [ref=e124]: 
+            - generic [ref=e125]: Dashboard
+            - text: 
+        - listitem [ref=e126]:
+          - link " My Profile" [ref=e127] [cursor=pointer]:
+            - /url: /my
+            - generic [ref=e128]: 
+            - generic [ref=e129]: My Profile
+            - text: 
+        - listitem [ref=e130]:
+          - link " Administrator" [ref=e131] [cursor=pointer]:
+            - /url: /admin
+            - generic [ref=e132]: 
+            - generic [ref=e133]: Administrator
+            - text: 
+        - listitem [ref=e134]:
+          - link " Workflow" [ref=e135] [cursor=pointer]:
+            - /url: /workflow
+            - generic [ref=e136]: 
+            - generic [ref=e137]: Workflow
+            - text: 
+        - listitem [ref=e138]:
+          - link " System Setup" [ref=e139] [cursor=pointer]:
+            - /url: /system-setup
+            - generic [ref=e140]: 
+            - generic [ref=e141]: System Setup
+            - text: 
+        - listitem [ref=e142]:
+          - link " Client" [ref=e143] [cursor=pointer]:
+            - /url: /client
+            - generic [ref=e144]: 
+            - generic [ref=e145]: Client
+            - text: 
+        - listitem [ref=e146]:
+          - link " Billing" [ref=e147] [cursor=pointer]:
+            - /url: /billing
+            - generic [ref=e148]: 
+            - generic [ref=e149]: Billing
+            - text: 
+        - listitem [ref=e150]:
+          - link " Report" [ref=e151] [cursor=pointer]:
+            - /url: /reports
+            - generic [ref=e152]: 
+            - generic [ref=e153]: Report
+            - text: 
+        - listitem [ref=e154]:
+          - link " HR" [ref=e155] [cursor=pointer]:
+            - /url: /hrms
+            - generic [ref=e156]: 
+            - generic [ref=e157]: HR
+            - text: 
+        - listitem [ref=e158]:
+          - link " Payroll" [ref=e159] [cursor=pointer]:
+            - /url: /payroll
+            - generic [ref=e160]: 
+            - generic [ref=e161]: Payroll
+            - text: 
+      - generic [ref=e162]:
+        - generic [ref=e164]:
+          - navigation [ref=e165]:
+            - generic [ref=e166]:
+              - navigation [ref=e168]:
+                - list [ref=e169]:
+                  - listitem [ref=e170]:
+                    - link "" [ref=e171] [cursor=pointer]:
+                      - /url: /my/dashboard
+                  - listitem [ref=e173]
+                  - listitem [ref=e177]:
+                    - link "My" [ref=e178] [cursor=pointer]:
+                      - /url: /my
+                  - listitem [ref=e180]
+                  - listitem [ref=e184]:
+                    - link "My Dashboard" [ref=e185] [cursor=pointer]:
+                      - /url: /my/dashboard
+              - button [ref=e188] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e189]: 
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e195]:
+                  - heading "Good Afternoon Super Admin! " [level=5] [ref=e196]:
+                    - text: Good Afternoon Super Admin!
+                    - generic [ref=e197]: 
+                  - paragraph [ref=e198]: Have a productive day !!
+                - generic [ref=e200]:
+                  - img "avatar" [ref=e202]
+                  - generic [ref=e203]:
+                    - heading "Super Admin" [level=5] [ref=e204]
+                    - paragraph [ref=e205]: Superadmin
+                    - paragraph [ref=e206]: Work From Home
+                    - button "View Profile" [ref=e207] [cursor=pointer]
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - generic [ref=e212]: 
+                  - heading "Members on Leave" [level=5] [ref=e214]
+                - generic [ref=e215]:
+                  - generic [ref=e217]: 
+                  - generic [ref=e218]: Full team available!
+                  - generic [ref=e219]: No one is on leave.
+              - generic [ref=e221]:
+                - generic [ref=e222]:
+                  - generic [ref=e224]: 
+                  - heading "Today's Birthdays" [level=5] [ref=e225]
+                - region "Today's Birthdays" [ref=e226]:
+                  - list [ref=e227]:
+                    - listitem [ref=e228]:
+                      - generic [ref=e230]:
+                        - generic [ref=e231] [cursor=pointer]
+                        - generic [ref=e233]:
+                          - generic [ref=e234]: Shobhana Desai
+                          - generic [ref=e235]: Group Manager
+                    - listitem [ref=e236]:
+                      - generic [ref=e238]:
+                        - generic [ref=e239] [cursor=pointer]
+                        - generic [ref=e241]:
+                          - generic [ref=e242]: Maulik Shah
+                          - generic [ref=e243]: Superrecords
+                    - listitem [ref=e244]:
+                      - generic [ref=e246]:
+                        - generic [ref=e247] [cursor=pointer]
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: Shivani Shah
+                          - generic [ref=e251]: Superrecords
+                    - listitem [ref=e252]:
+                      - generic [ref=e254]:
+                        - generic [ref=e255] [cursor=pointer]
+                        - generic [ref=e257]:
+                          - generic [ref=e258]: Trisha Devamma Kaliyanda Sandeep
+                          - generic [ref=e259]: Superrecords
+                    - listitem [ref=e260]:
+                      - generic [ref=e262]:
+                        - generic [ref=e263] [cursor=pointer]
+                        - generic [ref=e265]:
+                          - generic [ref=e266]: Madhumitha B
+                          - generic [ref=e267]: Superrecords
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e271]: 
+                  - heading "Quick Links" [level=5] [ref=e272]
+                - generic [ref=e273]:
+                  - generic [ref=e274] [cursor=pointer]:
+                    - generic [ref=e276]: 
+                    - generic [ref=e277]: Awardee Of The Month
+                  - generic [ref=e278] [cursor=pointer]:
+                    - generic [ref=e280]: 
+                    - generic [ref=e281]: Read Policies
+                  - button "Add Timesheet" [ref=e282] [cursor=pointer]:
+                    - generic [ref=e284]: 
+                  - generic [ref=e286] [cursor=pointer]:
+                    - generic [ref=e288]: 
+                    - generic [ref=e289]: Daily Report
+                  - generic [ref=e290] [cursor=pointer]:
+                    - generic [ref=e292]: 
+                    - generic [ref=e293]: Today's Timesheet
+                  - generic [ref=e294] [cursor=pointer]:
+                    - generic [ref=e296]: 
+                    - generic [ref=e297]: Worksheet Master Checklist
+                  - generic [ref=e298] [cursor=pointer]:
+                    - generic [ref=e300]: 
+                    - generic [ref=e301]: Worksheet
+                  - generic [ref=e302] [cursor=pointer]:
+                    - generic [ref=e304]: 
+                    - generic [ref=e305]: Security Codes
+                  - link "BK Knowledge Bank" [ref=e306] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/10ceidL5LlnUKFlSP7N1Uk957Amq1wM3EkT6Wfus2Dx4/edit?usp=sharing
+                    - generic [ref=e308]: 
+                    - generic [aria-hidden] [ref=e310]: 
+                  - link "Knowledge Bank - BS-AU" [ref=e311] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/10ceidL5LlnUKFlSP7N1Uk957Amq1wM3EkT6Wfus2Dx4/edit?usp=sharing
+                    - generic [ref=e313]: 
+                    - generic [aria-hidden] [ref=e315]: 
+                  - link "Payroll Knowledge Bank" [ref=e316] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/1MJdBlrAL_-zvsiBRJHlz_qVM5QUGSVMovhA84ZIXYUI/edit#gid=1609323003
+                    - generic [ref=e318]: 
+                    - generic [aria-hidden] [ref=e320]: 
+                  - generic [ref=e321] [cursor=pointer]:
+                    - generic [ref=e323]: 
+                    - generic [ref=e324]: MSA Links
+                  - generic [ref=e325] [cursor=pointer]:
+                    - generic [ref=e327]: 
+                    - generic [ref=e328]: Brand Portal
+                  - generic [ref=e329] [cursor=pointer]:
+                    - generic [ref=e331]: 
+                    - generic [ref=e332]: Asmakam Ayurveda
+            - generic [ref=e333]:
+              - generic [ref=e335]:
+                - generic [ref=e336]:
+                  - generic [ref=e338]: 
+                  - heading "Daily Motivation" [level=5] [ref=e339]
+                - paragraph [ref=e341]: "\"अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत। अव्यक्तनिधनान्येव तत्र का परिदेवना॥ (Beings are unmanifest in the beginning manifest in the middle and unmanifest again at the end. What then is there to grieve?) - Bhagavad Gita 2.28\""
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - generic [ref=e344]:
+                    - generic [ref=e346]: 
+                    - heading "New Hires" [level=5] [ref=e347]
+                  - generic [ref=e348]:
+                    - generic [ref=e349] [cursor=pointer]:
+                      - generic [ref=e350]:
+                        - combobox: All
+                      - generic [ref=e351]: All
+                    - group [ref=e357]:
+                      - generic [ref=e358] [cursor=pointer]: Last Week
+                      - generic [ref=e361] [cursor=pointer]: This Week
+                      - generic [ref=e364] [cursor=pointer]: This Month
+                      - generic [ref=e367] [cursor=pointer]: Last Month
+                - generic [ref=e370]:
+                  - generic [ref=e371]:
+                    - paragraph [ref=e372]: Total New Hires
+                    - paragraph [ref=e373]: "1"
+                  - generic [ref=e374]:
+                    - paragraph [ref=e375]: Top Department
+                    - paragraph [ref=e376]: N/A
+                  - generic [ref=e377]:
+                    - paragraph [ref=e378]: Locations
+                    - paragraph [ref=e379]: "1"
+                - generic [ref=e386]:
+                  - generic [ref=e388] [cursor=pointer]
+                  - heading "Nayan Dabhi" [level=6] [ref=e391]
+                  - generic [ref=e393]:
+                    - paragraph
+                    - generic [ref=e394]: BCH - 17
+              - generic [ref=e396]:
+                - generic [ref=e398]:
+                  - generic [ref=e399]:
+                    - generic [ref=e401]: 
+                    - heading "Upcoming Holiday Of Month" [level=5] [ref=e402]
+                  - generic "Choose Date" [ref=e405]:
+                    - generic [ref=e407]:
+                      - generic [ref=e408]:
+                        - button "Previous Month" [ref=e410] [cursor=pointer]
+                        - generic [ref=e414]:
+                          - button "Choose Month" [ref=e415] [cursor=pointer]: October
+                          - button "Choose Year" [ref=e416] [cursor=pointer]: "2026"
+                        - button "Next Month" [ref=e418] [cursor=pointer]
+                      - grid [ref=e422]:
+                        - rowgroup [ref=e423]:
+                          - row [ref=e424]:
+                            - columnheader "Su" [ref=e425]
+                            - columnheader "Mo" [ref=e426]
+                            - columnheader "Tu" [ref=e427]
+                            - columnheader "We" [ref=e428]
+                            - columnheader "Th" [ref=e429]
+                            - columnheader "Fr" [ref=e430]
+                            - columnheader "Sa" [ref=e431]
+                        - rowgroup [ref=e432]:
+                          - row [ref=e433]:
+                            - gridcell "27" [ref=e434]
+                            - gridcell "28" [ref=e435]
+                            - gridcell "29" [ref=e436]
+                            - gridcell "30" [ref=e437]
+                            - gridcell "1" [ref=e438]
+                            - gridcell "2" [ref=e441]
+                            - gridcell "3" [ref=e444]
+                          - row [ref=e447]:
+                            - gridcell "4" [ref=e448]
+                            - gridcell "5" [ref=e451]
+                            - gridcell "6" [ref=e454]
+                            - gridcell "7" [ref=e457]
+                            - gridcell "8" [ref=e460]
+                            - gridcell "9" [ref=e463]
+                            - gridcell "10" [ref=e466]
+                          - row [ref=e469]:
+                            - gridcell "11" [ref=e470]
+                            - gridcell "12" [ref=e473]
+                            - gridcell "13" [ref=e476]
+                            - gridcell "14" [ref=e479]
+                            - gridcell "15" [ref=e482]
+                            - gridcell "16" [ref=e485]
+                            - gridcell "17" [ref=e488]
+                          - row [ref=e491]:
+                            - gridcell "18" [ref=e492]
+                            - gridcell "19" [ref=e495]
+                            - gridcell "20" [ref=e498]
+                            - gridcell "21" [ref=e501]
+                            - gridcell "22" [ref=e504]
+                            - gridcell "23" [ref=e507]
+                            - gridcell "24" [ref=e510]
+                          - row [ref=e513]:
+                            - gridcell "25" [ref=e514]
+                            - gridcell "26" [ref=e517]
+                            - gridcell "27" [ref=e520]
+                            - gridcell "28" [ref=e523]
+                            - gridcell "29" [ref=e526]
+                            - gridcell "30" [ref=e529]
+                            - gridcell "31" [ref=e532]
+                - generic [ref=e535]:
+                  - generic [ref=e536]:
+                    - generic [ref=e537]:
+                      - generic [ref=e539]: 
+                      - heading "Holidays List" [level=5] [ref=e540]
+                    - generic [ref=e541]:
+                      - generic [ref=e542]:
+                        - generic [ref=e543]: 
+                        - generic [ref=e544]: India Public Holiday - 2026
+                      - link [ref=e545] [cursor=pointer]:
+                        - /url: https://befreecrm.com.au:4100/docs/Indian Office Holiday List - Sheet2026.pdf
+                        - generic [aria-hidden] [ref=e546]: 
+                    - generic [ref=e547]:
+                      - generic [ref=e548]:
+                        - generic [ref=e549]: 
+                        - generic [ref=e550]: Australian / UK / US Public Holidays - 2026
+                      - link [ref=e551] [cursor=pointer]:
+                        - /url: https://befreecrm.com.au:4100/docs/Australian UK & US Public Holidays - 2026.pdf
+                        - generic [aria-hidden] [ref=e552]: 
+                  - generic [ref=e553]:
+                    - generic [ref=e554]:
+                      - generic [ref=e555]:
+                        - generic [ref=e557]: 
+                        - heading "Today's Menu" [level=5] [ref=e558]
+                      - generic [ref=e559]: Not Booked
+                    - generic [ref=e561]:
+                      - generic [ref=e562]: 
+                      - paragraph [ref=e563]: You haven't booked today's lunch.
+        - contentinfo [ref=e565]:
+          - generic [ref=e566]: © 2026 Befree Pvt Ltd. All Rights Reserved.
+          - generic [ref=e567]: Befree Workspace [ --- QA --- ]
+    - generic:
+      - generic:
+        - alertdialog
+      - generic:
+        - alertdialog
+  - dialog [ref=e568]:
+    - generic [ref=e569]:
+      - generic [ref=e570]:
+        - paragraph [ref=e573]: Super Admin
+        - paragraph [ref=e574]: bdmsdeveloper@befree.com.au
+      - menu [ref=e577]:
+        - menuitem "Profile" [ref=e578]:
+          - link " Profile" [ref=e580] [cursor=pointer]:
+            - /url: /my/profile
+            - generic [ref=e581]: 
+            - generic [ref=e582]: Profile
+        - menuitem "Theme Change" [ref=e583]:
+          - generic [ref=e585] [cursor=pointer]:
+            - generic [ref=e586]: 
+            - generic [ref=e587]: Theme Change
+        - menuitem "Maximize" [ref=e588]:
+          - generic [ref=e590] [cursor=pointer]:
+            - generic [ref=e591]: 
+            - generic [ref=e592]: Maximize
+            - generic [ref=e593]: F11
+        - menuitem "Portal Guide" [ref=e594]:
+          - link " Portal Guide" [ref=e596] [cursor=pointer]:
+            - /url: /portal-guide
+            - generic [ref=e597]: 
+            - generic [ref=e598]: Portal Guide
+        - menuitem "Logout" [ref=e599]:
+          - generic [ref=e601] [cursor=pointer]:
+            - generic [ref=e602]: 
+            - generic [ref=e603]: Logout

@@ -1,0 +1,8 @@
+[    2102ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[    2237ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[    3116ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0
+[    4375ms] Transition was skipped. New ViewTransition started
+[    4510ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GLB4TPBM.js:937
+[ 1833864ms] [LOG] TabMenu is deprecated as of v18. Use tabs component instead https://primeng.org/tabs#tabmenu @ http://10.10.20.41/chunk-NAIF5NTC.js:1281
+[ 2454200ms] [INFO] [FormGroup] invalid controls [] @ http://10.10.20.41/chunk-O6KCJE7N.js:2
+[ 2454678ms] [ERROR] Failed to load resource: the server responded with a status of 422 (Unprocessable Content) @ http://10.10.20.41:443/v1.0/hr/leaverequest/store:0

@@ -1,0 +1,21 @@
+[    2067ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[    2200ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[   22918ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0
+[   24807ms] Transition was skipped. New ViewTransition started
+[   25058ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GLB4TPBM.js:937
+[   31647ms] [ERROR] ERROR TypeError: Cannot read properties of null (reading 'addEventListener')
+    at r.addEventListener (http://10.10.20.41/chunk-QZZZSVEB.js:1:84099)
+    at r.addEventListener (http://10.10.20.41/chunk-QZZZSVEB.js:1:75130)
+    at An.listen (http://10.10.20.41/chunk-QZZZSVEB.js:1:80912)
+    at Re.listen (http://10.10.20.41/browser-T6VANCXW.js:1:61039)
+    at e.leave (http://10.10.20.41/main-365GWAWI.js:311:10017)
+    at e.clickListener (http://10.10.20.41/main-365GWAWI.js:311:8705)
+    at http://10.10.20.41/main-365GWAWI.js:311:12376
+    at bl (http://10.10.20.41/chunk-DCQX6U25.js:7:106320)
+    at r (http://10.10.20.41/chunk-DCQX6U25.js:7:106168)
+    at HTMLButtonElement.<anonymous> (http://10.10.20.41/chunk-QZZZSVEB.js:1:81062) @ http://10.10.20.41/chunk-DCQX6U25.js:6
+[   45265ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[   45422ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[   64390ms] [ERROR] Failed to load resource: the server responded with a status of 423 (Locked) @ http://10.10.20.41:443/v1.0/admin/login:0
+[   64392ms] [LOG] [Username/Password doesn't match] @ http://10.10.20.41/chunk-SMT4DRUE.js:0
+[   64397ms] [INFO] Autofocus processing was blocked because a document already has a focused element. @ http://10.10.20.41/auth/login:0

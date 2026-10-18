@@ -1,0 +1,37 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - img "Befree" [ref=f1e8]
+        - heading "Sign in to continue" [level=1] [ref=f1e9]
+        - generic [ref=f1e10]:
+          - generic [ref=f1e11]: Username
+          - textbox "Username" [ref=f1e12]
+        - generic [ref=f1e13]:
+          - generic [ref=f1e14]: Password
+          - textbox [ref=f1e17]
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]:
+            - checkbox [ref=f1e25] [cursor=pointer]
+            - generic [ref=f1e27]: Remember Me
+          - link "Forgot Password?" [ref=f1e28] [cursor=pointer]:
+            - /url: /auth/forgot-password
+        - generic [ref=f1e29]:
+          - checkbox "I have read and agreed to the Terms & Conditions." [ref=f1e32] [cursor=pointer]
+          - generic [ref=f1e34]:
+            - text: I have read and agreed to the
+            - button "Terms & Conditions." [ref=f1e35] [cursor=pointer]
+        - button "Login" [ref=f1e36] [cursor=pointer]
+        - strong [ref=f1e40]: Or Continue With
+        - generic [ref=f1e42]:
+          - button "Login with miniOrange" [ref=f1e43] [cursor=pointer]
+          - button "Login with BeSecure" [ref=f1e44] [cursor=pointer]
+      - paragraph [ref=f1e45]: 2026 Befree Pvt Ltd. All Rights Reserved.
+    - generic [aria-hidden] [ref=f1e46]:
+      - heading [level=2] [ref=f1e47]: Welcome to BDMS
+      - paragraph [ref=f1e48]: Everything your team needs to keep work moving. Secure access. Seamless operations.
+  - generic:
+    - generic:
+      - alertdialog
+    - generic:
+      - alertdialog

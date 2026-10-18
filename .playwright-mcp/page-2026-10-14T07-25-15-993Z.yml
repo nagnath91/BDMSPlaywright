@@ -1,0 +1,357 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e4]:
+    - generic [ref=f7e5]:
+      - link [ref=f7e6] [cursor=pointer]:
+        - /url: /my/dashboard
+        - img "app logo" [ref=f7e7]
+      - heading "Today's Timesheet" [level=1] [ref=f7e833]
+      - generic [ref=f7e9]:
+        - generic [ref=f7e10]:
+          - button "🤝 Ask your Buddy" [ref=f7e12] [cursor=pointer]
+          - button "" [ref=f7e15] [cursor=pointer]
+          - generic [ref=f7e18]:
+            - button "" [ref=f7e20] [cursor=pointer]
+            - generic [ref=f7e22]: "7"
+        - 'button "My Leaves: 0" [ref=f7e24] [cursor=pointer]':
+          - generic [aria-hidden] [ref=f7e25]: 
+          - generic [ref=f7e26]: "My Leaves:"
+          - generic [ref=f7e27]: "0"
+        - generic [ref=f7e28]:
+          - generic [ref=f7e29]: "In: 12:11:05"
+          - generic [ref=f7e30]: "Spent: 00:44:10"
+        - button "10" [ref=f7e834] [cursor=pointer]
+        - button [ref=f7e32] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f7e33]: 
+        - button "avatar Aachal Kashyap In-house " [ref=f7e35] [cursor=pointer]:
+          - img "avatar" [ref=f7e36]
+          - generic [ref=f7e37]:
+            - generic [ref=f7e38]: Aachal Kashyap
+            - generic [ref=f7e39]: In-house
+          - generic [ref=f7e40]: 
+    - list [ref=f7e43]:
+      - listitem [ref=f7e44]:
+        - link " Dashboard" [ref=f7e45] [cursor=pointer]:
+          - /url: /my/dashboard
+          - generic [ref=f7e46]: 
+          - generic [ref=f7e47]: Dashboard
+          - text: 
+      - listitem [ref=f7e48]:
+        - link " My Profile" [ref=f7e49] [cursor=pointer]:
+          - /url: /my
+          - generic [ref=f7e50]: 
+          - generic [ref=f7e51]: My Profile
+          - text: 
+      - listitem [ref=f7e52]:
+        - link " Workflow" [ref=f7e53] [cursor=pointer]:
+          - /url: /workflow
+          - generic [ref=f7e54]: 
+          - generic [ref=f7e55]: Workflow
+          - text: 
+      - listitem [ref=f7e56]:
+        - link " Client" [ref=f7e57] [cursor=pointer]:
+          - /url: /client
+          - generic [ref=f7e58]: 
+          - generic [ref=f7e59]: Client
+          - text: 
+      - listitem [ref=f7e60]:
+        - link " HR" [ref=f7e61] [cursor=pointer]:
+          - /url: /hrms
+          - generic [ref=f7e62]: 
+          - generic [ref=f7e63]: HR
+          - text: 
+    - generic [ref=f7e64]:
+      - generic [ref=f7e66]:
+        - navigation [ref=f7e67]:
+          - generic [ref=f7e68]:
+            - navigation [ref=f7e70]:
+              - list [ref=f7e71]:
+                - listitem [ref=f7e72]:
+                  - link "" [ref=f7e73] [cursor=pointer]:
+                    - /url: /my/dashboard
+                - listitem [ref=f7e75]
+                - listitem [ref=f7e835]:
+                  - link "Workflow" [ref=f7e836] [cursor=pointer]:
+                    - /url: /workflow
+                - listitem [ref=f7e838]
+                - listitem [ref=f7e842]:
+                  - link "Worksheet" [ref=f7e843] [cursor=pointer]:
+                    - /url: /workflow/worksheet
+                - listitem [ref=f7e845]
+                - listitem [ref=f7e849]:
+                  - link "Today's Timesheet" [ref=f7e850] [cursor=pointer]:
+                    - /url: /workflow/worksheet/todays-timesheet
+            - generic [ref=f7e852]:
+              - link "Today's Worksheet" [ref=f7e853] [cursor=pointer]:
+                - /url: /workflow/worksheet/todays-worksheet
+              - link "Incomplete Worksheet" [ref=f7e855] [cursor=pointer]:
+                - /url: /workflow/dashboard/incomplete-worksheet
+              - button "Quick Action" [ref=f7e857] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e858]: 
+        - generic [ref=f7e864]:
+          - generic [ref=f7e866]:
+            - button " Add Timesheet" [ref=f7e869] [cursor=pointer]:
+              - generic [ref=f7e870]: 
+              - generic [ref=f7e871]: Add Timesheet
+            - 'heading "Total Units: 0" [level=4] [ref=f7e873]'
+            - generic [ref=f7e874]: "Note: For multiple approvals, please filter by the approval type before proceeding to approve or reject."
+            - generic [ref=f7e875]:
+              - button [ref=f7e876] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e877]: 
+              - button [ref=f7e878] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e879]: 
+              - button [ref=f7e880] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e881]: 
+              - button [ref=f7e882] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e883]: 
+              - button [ref=f7e884] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e885]: 
+          - table [ref=f7e887]:
+            - rowgroup [ref=f7e888]:
+              - row [ref=f7e889]:
+                - columnheader [ref=f7e890]
+                - columnheader [ref=f7e892]
+                - columnheader "Index" [ref=f7e894]
+                - columnheader "User Name" [ref=f7e897] [cursor=pointer]
+                - columnheader "Parent Trading Name" [ref=f7e908] [cursor=pointer]
+                - columnheader "Client Name" [ref=f7e919] [cursor=pointer]
+                - columnheader "Master Activity" [ref=f7e930] [cursor=pointer]
+                - columnheader "Task" [ref=f7e941] [cursor=pointer]
+                - columnheader "Period from" [ref=f7e952] [cursor=pointer]
+                - columnheader "Period to" [ref=f7e963] [cursor=pointer]
+                - columnheader "Timesheet Date" [ref=f7e974] [cursor=pointer]
+                - columnheader "Billing Status" [ref=f7e985] [cursor=pointer]
+                - columnheader "Reason" [ref=f7e996]
+                - columnheader "Approval" [ref=f7e999] [cursor=pointer]
+                - columnheader "Status" [ref=f7e1010] [cursor=pointer]
+                - columnheader "Action" [ref=f7e1021]
+              - row [ref=f7e1024]:
+                - columnheader [ref=f7e1025]
+                - columnheader [ref=f7e1026]
+                - columnheader [ref=f7e1027]
+                - columnheader [ref=f7e1028]:
+                  - generic [ref=f7e1030]:
+                    - generic [ref=f7e1032] [cursor=pointer]:
+                      - combobox [ref=f7e1033]
+                      - button "dropdown trigger" [ref=f7e1037]:
+                        - generic [ref=f7e1038]: 
+                    - generic [ref=f7e1039]:
+                      - separator
+                      - generic [ref=f7e1040] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1041]:
+                          - generic [ref=f7e1042]: 
+                - columnheader [ref=f7e1043]:
+                  - generic [ref=f7e1045]:
+                    - generic [ref=f7e1047] [cursor=pointer]:
+                      - combobox [ref=f7e1048]
+                      - button "dropdown trigger" [ref=f7e1049]:
+                        - generic [ref=f7e1050]: 
+                    - generic [ref=f7e1051]:
+                      - separator
+                      - generic [ref=f7e1052] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1053]:
+                          - generic [ref=f7e1054]: 
+                - columnheader [ref=f7e1055]:
+                  - generic [ref=f7e1057]:
+                    - generic [ref=f7e1059] [cursor=pointer]:
+                      - combobox [ref=f7e1060]
+                      - button "dropdown trigger" [ref=f7e1061]:
+                        - generic [ref=f7e1062]: 
+                    - generic [ref=f7e1063]:
+                      - separator
+                      - generic [ref=f7e1064] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1065]:
+                          - generic [ref=f7e1066]: 
+                - columnheader [ref=f7e1067]:
+                  - generic [ref=f7e1069]:
+                    - generic [ref=f7e1071] [cursor=pointer]:
+                      - combobox [ref=f7e1072]
+                      - button "dropdown trigger" [ref=f7e1073]:
+                        - generic [ref=f7e1074]: 
+                    - generic [ref=f7e1075]:
+                      - separator
+                      - generic [ref=f7e1076] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1077]:
+                          - generic [ref=f7e1078]: 
+                - columnheader [ref=f7e1079]:
+                  - generic [ref=f7e1081]:
+                    - generic [ref=f7e1083] [cursor=pointer]:
+                      - combobox [ref=f7e1084]
+                      - button "dropdown trigger" [ref=f7e1085]:
+                        - generic [ref=f7e1086]: 
+                    - generic [ref=f7e1087]:
+                      - separator
+                      - generic [ref=f7e1088] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1089]:
+                          - generic [ref=f7e1090]: 
+                - columnheader [ref=f7e1091]:
+                  - generic [ref=f7e1095]:
+                    - combobox [ref=f7e1098]
+                    - separator
+                    - combobox [ref=f7e1101]
+                - columnheader [ref=f7e1102]:
+                  - generic [ref=f7e1104]:
+                    - combobox [ref=f7e1108]
+                    - generic [ref=f7e1109]:
+                      - separator
+                      - generic [ref=f7e1110] [cursor=pointer]:
+                        - combobox "Date Is"
+                        - button "dropdown trigger" [ref=f7e1111]:
+                          - generic [ref=f7e1112]: 
+                - columnheader [ref=f7e1113]:
+                  - generic [ref=f7e1115]:
+                    - combobox [ref=f7e1119]: 14/10/2026
+                    - generic [ref=f7e1120]:
+                      - separator
+                      - generic [ref=f7e1121] [cursor=pointer]:
+                        - combobox "Date Is"
+                        - button "dropdown trigger" [ref=f7e1122]:
+                          - generic [ref=f7e1123]: 
+                - columnheader [ref=f7e1124]:
+                  - generic [ref=f7e1126]:
+                    - generic [ref=f7e1128] [cursor=pointer]:
+                      - combobox [ref=f7e1129]
+                      - button "dropdown trigger" [ref=f7e1130]:
+                        - generic [ref=f7e1131]: 
+                    - generic [ref=f7e1132]:
+                      - separator
+                      - generic [ref=f7e1133] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1134]:
+                          - generic [ref=f7e1135]: 
+                - columnheader [ref=f7e1136]:
+                  - generic [ref=f7e1138]:
+                    - textbox [ref=f7e1140]
+                    - generic [ref=f7e1141]:
+                      - separator
+                      - generic [ref=f7e1142] [cursor=pointer]:
+                        - combobox "Contain"
+                        - button "dropdown trigger" [ref=f7e1143]:
+                          - generic [ref=f7e1144]: 
+                - columnheader [ref=f7e1145]
+                - columnheader "empty dropdown trigger" [ref=f7e1146]:
+                  - generic [ref=f7e1148]:
+                    - generic [ref=f7e1150] [cursor=pointer]:
+                      - generic [ref=f7e1151]:
+                        - combobox: empty
+                      - generic [aria-hidden] [ref=f7e1154]: 
+                    - generic [ref=f7e1155]:
+                      - separator
+                      - generic [ref=f7e1156] [cursor=pointer]:
+                        - combobox "Equals"
+                        - button "dropdown trigger" [ref=f7e1157]:
+                          - generic [ref=f7e1158]: 
+                - columnheader [ref=f7e1159]
+            - rowgroup [ref=f7e1160]:
+              - row [ref=f7e1161]:
+                - cell [ref=f7e1162]
+                - cell [ref=f7e1165]
+                - cell [ref=f7e1168]
+                - cell [ref=f7e1171]
+                - cell [ref=f7e1174]
+                - cell [ref=f7e1177]
+                - cell [ref=f7e1180]
+                - cell [ref=f7e1183]
+                - cell [ref=f7e1186]
+                - cell [ref=f7e1189]
+                - cell [ref=f7e1192]
+                - cell [ref=f7e1195]
+                - cell [ref=f7e1198]
+                - cell [ref=f7e1201]
+                - cell [ref=f7e1204]
+                - cell [ref=f7e1207]
+              - row [ref=f7e1210]:
+                - cell [ref=f7e1211]
+                - cell [ref=f7e1214]
+                - cell [ref=f7e1217]
+                - cell [ref=f7e1220]
+                - cell [ref=f7e1223]
+                - cell [ref=f7e1226]
+                - cell [ref=f7e1229]
+                - cell [ref=f7e1232]
+                - cell [ref=f7e1235]
+                - cell [ref=f7e1238]
+                - cell [ref=f7e1241]
+                - cell [ref=f7e1244]
+                - cell [ref=f7e1247]
+                - cell [ref=f7e1250]
+                - cell [ref=f7e1253]
+                - cell [ref=f7e1256]
+              - row [ref=f7e1259]:
+                - cell [ref=f7e1260]
+                - cell [ref=f7e1263]
+                - cell [ref=f7e1266]
+                - cell [ref=f7e1269]
+                - cell [ref=f7e1272]
+                - cell [ref=f7e1275]
+                - cell [ref=f7e1278]
+                - cell [ref=f7e1281]
+                - cell [ref=f7e1284]
+                - cell [ref=f7e1287]
+                - cell [ref=f7e1290]
+                - cell [ref=f7e1293]
+                - cell [ref=f7e1296]
+                - cell [ref=f7e1299]
+                - cell [ref=f7e1302]
+                - cell [ref=f7e1305]
+              - row [ref=f7e1308]:
+                - cell [ref=f7e1309]
+                - cell [ref=f7e1312]
+                - cell [ref=f7e1315]
+                - cell [ref=f7e1318]
+                - cell [ref=f7e1321]
+                - cell [ref=f7e1324]
+                - cell [ref=f7e1327]
+                - cell [ref=f7e1330]
+                - cell [ref=f7e1333]
+                - cell [ref=f7e1336]
+                - cell [ref=f7e1339]
+                - cell [ref=f7e1342]
+                - cell [ref=f7e1345]
+                - cell [ref=f7e1348]
+                - cell [ref=f7e1351]
+                - cell [ref=f7e1354]
+              - row [ref=f7e1357]:
+                - cell [ref=f7e1358]
+                - cell [ref=f7e1361]
+                - cell [ref=f7e1364]
+                - cell [ref=f7e1367]
+                - cell [ref=f7e1370]
+                - cell [ref=f7e1373]
+                - cell [ref=f7e1376]
+                - cell [ref=f7e1379]
+                - cell [ref=f7e1382]
+                - cell [ref=f7e1385]
+                - cell [ref=f7e1388]
+                - cell [ref=f7e1391]
+                - cell [ref=f7e1394]
+                - cell [ref=f7e1397]
+                - cell [ref=f7e1400]
+                - cell [ref=f7e1403]
+          - generic [ref=f7e1407]:
+            - generic [ref=f7e1408]: Showing 0 to 0 of 0 entries
+            - button "First Page" [disabled]
+            - button "Previous Page" [disabled]
+            - button "Next Page" [disabled]
+            - button "Last Page" [disabled]
+            - generic:
+              - combobox "Rows per page" [disabled]: "25"
+              - button "dropdown trigger"
+      - contentinfo [ref=f7e451]:
+        - generic [ref=f7e452]: © 2026 Befree Pvt Ltd. All Rights Reserved.
+        - generic [ref=f7e453]: Befree Workspace [ --- QA --- ]
+  - alert [ref=f7e1411]:
+    - generic [ref=f7e1412]:
+      - generic [ref=f7e1417]:
+        - generic [ref=f7e1418]: Success
+        - generic [ref=f7e1419]: Successfully created
+      - button "Close" [ref=f7e1421] [cursor=pointer]
+  - generic:
+    - generic:
+      - alertdialog
+    - generic:
+      - alertdialog

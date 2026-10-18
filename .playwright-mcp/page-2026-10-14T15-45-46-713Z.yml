@@ -1,0 +1,357 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /my/dashboard
+          - img "app logo" [ref=e7]
+        - heading "My Leaves - All" [level=1] [ref=e603]
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - button "🤝 Ask your Buddy" [ref=e12] [cursor=pointer]
+            - button "" [ref=e15] [cursor=pointer]
+            - generic [ref=e18]:
+              - button "" [ref=e20] [cursor=pointer]
+              - generic [ref=e22]: "7"
+          - 'button "My Leaves: 0" [ref=e24] [cursor=pointer]':
+            - generic [aria-hidden] [ref=e25]: 
+            - generic [ref=e26]: "My Leaves:"
+            - generic [ref=e27]: "0"
+          - generic [ref=e28]:
+            - generic [ref=e29]: "In: 11:36:21"
+            - generic [ref=e30]: "Spent: 09:39:24"
+          - button "80" [ref=e31] [cursor=pointer]
+          - button [ref=e32] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e33]: 
+          - button "avatar Nagnath Gejage Group Manager " [ref=e35] [cursor=pointer]:
+            - img "avatar" [ref=e36]
+            - generic [ref=e37]:
+              - generic [ref=e38]: Nagnath Gejage
+              - generic [ref=e39]: Group Manager
+            - generic [ref=e40]: 
+      - list [ref=e43]:
+        - listitem [ref=e44]:
+          - link " Dashboard" [ref=e45] [cursor=pointer]:
+            - /url: /my/dashboard
+            - generic [ref=e46]: 
+            - generic [ref=e47]: Dashboard
+            - text: 
+        - listitem [ref=e48]:
+          - link " My Profile" [ref=e49] [cursor=pointer]:
+            - /url: /my
+            - generic [ref=e50]: 
+            - generic [ref=e51]: My Profile
+            - text: 
+        - listitem [ref=e52]:
+          - link " Workflow" [ref=e53] [cursor=pointer]:
+            - /url: /workflow
+            - generic [ref=e54]: 
+            - generic [ref=e55]: Workflow
+            - text: 
+        - listitem [ref=e56]:
+          - link " Client" [ref=e57] [cursor=pointer]:
+            - /url: /client
+            - generic [ref=e58]: 
+            - generic [ref=e59]: Client
+            - text: 
+        - listitem [ref=e60]:
+          - link " HR" [ref=e61] [cursor=pointer]:
+            - /url: /hrms
+            - generic [ref=e62]: 
+            - generic [ref=e63]: HR
+            - text: 
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - navigation [ref=e67]:
+            - navigation [ref=e70]:
+              - list [ref=e71]:
+                - listitem [ref=e72]:
+                  - link "" [ref=e73] [cursor=pointer]:
+                    - /url: /my/dashboard
+                - listitem [ref=e75]
+                - listitem [ref=e604]:
+                  - generic [ref=e605]: My Profile
+                - listitem [ref=e607]
+                - listitem [ref=e611]:
+                  - link "My Leaves" [ref=e612] [cursor=pointer]:
+                    - /url: /my/leaves
+                - listitem [ref=e614]
+                - listitem [ref=e618]:
+                  - link "All" [ref=e619] [cursor=pointer]:
+                    - /url: /my/leaves/all
+          - generic [ref=e621]:
+            - menubar [ref=e628]:
+              - menuitem "All" [ref=e629] [cursor=pointer]
+              - menuitem "Pending For Approval" [ref=e632] [cursor=pointer]
+              - menuitem "Approved" [ref=e635] [cursor=pointer]
+              - menuitem "Rejected" [ref=e638] [cursor=pointer]
+            - generic [ref=e644]:
+              - generic [ref=e646]:
+                - generic [ref=e647]:
+                  - button "Apply Leave" [ref=e648] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e649]: 
+                  - button "Leave Trackers" [ref=e651] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e652]: 
+                - generic [ref=e655]:
+                  - button [ref=e656] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e657]: 
+                  - button [ref=e658] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e659]: 
+                  - button [ref=e660] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e661]: 
+                  - button [ref=e662] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e663]: 
+                  - button [ref=e664] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e665]: 
+              - table [ref=e667]:
+                - rowgroup [ref=e668]:
+                  - row [ref=e669]:
+                    - columnheader "Index" [ref=e670]
+                    - columnheader "Employee Name" [ref=e673] [cursor=pointer]
+                    - columnheader "Leave Type" [ref=e684] [cursor=pointer]
+                    - columnheader "Leave Period" [ref=e695] [cursor=pointer]
+                    - columnheader "Days" [ref=e706] [cursor=pointer]
+                    - columnheader "Date of Requested" [ref=e717] [cursor=pointer]
+                    - columnheader "Approval" [ref=e728]
+                    - columnheader "Approval comment" [ref=e731]
+                    - columnheader "Status" [ref=e734] [cursor=pointer]
+                    - columnheader "Action" [ref=e745]
+                - rowgroup [ref=e748]:
+                  - row [ref=e749]:
+                    - cell "1" [ref=e750]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e752]:
+                      - generic [ref=e755]:
+                        - generic [ref=e756] [cursor=pointer]
+                        - generic [ref=e758]:
+                          - generic [ref=e759]: Nagnath Gejage
+                          - generic [ref=e760]: EMP-31360
+                    - cell "Casual" [ref=e761]
+                    - cell "01/11/2026 To 01/11/2026" [ref=e763]
+                    - cell "1" [ref=e765]
+                    - cell "14/10/2026" [ref=e769]
+                    - cell " " [ref=e771]:
+                      - generic [ref=e774]:
+                        - generic [ref=e775]:
+                          - generic [ref=e776] [cursor=pointer]
+                          - generic [ref=e778]: 
+                        - generic [ref=e780]:
+                          - generic [ref=e781] [cursor=pointer]
+                          - generic [ref=e783]: 
+                    - cell "1st Approver:Approved" [ref=e785]:
+                      - generic "1st Approver" [ref=e788]:
+                        - 'generic "1st Approver: Approved" [ref=e790]': 1st Approver:Approved
+                    - cell "Approved" [ref=e791]
+                    - cell [ref=e797]:
+                      - button "" [ref=e801] [cursor=pointer]
+                  - row [ref=e803]:
+                    - cell "2" [ref=e804]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e806]:
+                      - generic [ref=e809]:
+                        - generic [ref=e810] [cursor=pointer]
+                        - generic [ref=e812]:
+                          - generic [ref=e813]: Nagnath Gejage
+                          - generic [ref=e814]: EMP-31360
+                    - cell "Casual" [ref=e815]
+                    - cell "21/08/2026 To 21/08/2026" [ref=e817]
+                    - cell "1" [ref=e819]
+                    - cell "21/08/2026" [ref=e823]
+                    - cell [ref=e825]:
+                      - generic [ref=e828]:
+                        - generic [ref=e830] [cursor=pointer]
+                        - generic [ref=e833] [cursor=pointer]
+                    - cell [ref=e835]
+                    - cell "Pending For 1stApproval" [ref=e836]
+                    - cell [ref=e842]:
+                      - generic [ref=e844]:
+                        - button "" [ref=e846] [cursor=pointer]
+                        - button "" [ref=e849] [cursor=pointer]
+                  - row [ref=e851]:
+                    - cell "3" [ref=e852]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e854]:
+                      - generic [ref=e857]:
+                        - generic [ref=e858] [cursor=pointer]
+                        - generic [ref=e860]:
+                          - generic [ref=e861]: Nagnath Gejage
+                          - generic [ref=e862]: EMP-31360
+                    - cell "Comp-off" [ref=e863]
+                    - cell "22/08/2026 To 22/08/2026" [ref=e865]
+                    - cell "1" [ref=e867]
+                    - cell "17/08/2026" [ref=e871]
+                    - cell [ref=e873]:
+                      - generic [ref=e876]:
+                        - generic [ref=e878] [cursor=pointer]
+                        - generic [ref=e881] [cursor=pointer]
+                    - cell [ref=e883]
+                    - cell "Pending For 1stApproval" [ref=e884]
+                    - cell [ref=e890]:
+                      - generic [ref=e892]:
+                        - button "" [ref=e894] [cursor=pointer]
+                        - button "" [ref=e897] [cursor=pointer]
+                  - row [ref=e899]:
+                    - cell "4" [ref=e900]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e902]:
+                      - generic [ref=e905]:
+                        - generic [ref=e906] [cursor=pointer]
+                        - generic [ref=e908]:
+                          - generic [ref=e909]: Nagnath Gejage
+                          - generic [ref=e910]: EMP-31360
+                    - cell "Casual" [ref=e911]
+                    - cell "17/08/2026 To 17/08/2026" [ref=e913]
+                    - cell "1" [ref=e915]
+                    - cell "14/08/2026" [ref=e919]
+                    - cell [ref=e921]:
+                      - generic [ref=e924]:
+                        - generic [ref=e926] [cursor=pointer]
+                        - generic [ref=e929] [cursor=pointer]
+                    - cell [ref=e931]
+                    - cell "Pending For 1stApproval" [ref=e932]
+                    - cell [ref=e938]:
+                      - generic [ref=e940]:
+                        - button "" [ref=e942] [cursor=pointer]
+                        - button "" [ref=e945] [cursor=pointer]
+                  - row [ref=e947]:
+                    - cell "5" [ref=e948]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e950]:
+                      - generic [ref=e953]:
+                        - generic [ref=e954] [cursor=pointer]
+                        - generic [ref=e956]:
+                          - generic [ref=e957]: Nagnath Gejage
+                          - generic [ref=e958]: EMP-31360
+                    - cell "Casual" [ref=e959]
+                    - cell "09/02/2026 To 11/02/2026" [ref=e961]
+                    - cell "3" [ref=e963]
+                    - cell "13/01/2026" [ref=e967]
+                    - cell "" [ref=e969]:
+                      - generic [ref=e972]:
+                        - generic [ref=e973]:
+                          - generic [ref=e974] [cursor=pointer]
+                          - generic [ref=e976]: 
+                        - generic [ref=e979] [cursor=pointer]
+                    - cell "1st Approver:ok" [ref=e981]:
+                      - generic "1st Approver" [ref=e984]:
+                        - 'generic "1st Approver: ok" [ref=e986]': 1st Approver:ok
+                    - cell "Pending For 2ndApproval" [ref=e987]
+                    - cell [ref=e993]:
+                      - button "" [ref=e997] [cursor=pointer]
+                  - row [ref=e999]:
+                    - cell "6" [ref=e1000]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e1002]:
+                      - generic [ref=e1005]:
+                        - generic [ref=e1006] [cursor=pointer]
+                        - generic [ref=e1008]:
+                          - generic [ref=e1009]: Nagnath Gejage
+                          - generic [ref=e1010]: EMP-31360
+                    - cell "Casual" [ref=e1011]
+                    - cell "26/12/2024 To 28/12/2024" [ref=e1013]
+                    - cell "3" [ref=e1015]
+                    - cell "23/12/2024" [ref=e1019]
+                    - cell " " [ref=e1021]:
+                      - generic [ref=e1024]:
+                        - generic [ref=e1025]:
+                          - generic [ref=e1026] [cursor=pointer]
+                          - generic [ref=e1028]: 
+                        - generic [ref=e1030]:
+                          - generic [ref=e1031] [cursor=pointer]
+                          - generic [ref=e1033]: 
+                    - cell "1st Approver:You can take leave but please test Term and information task 2nd Approver:." [ref=e1035]:
+                      - generic [ref=e1036]:
+                        - generic "1st Approver" [ref=e1038]:
+                          - 'generic "1st Approver: You can take leave but please test Term and information task" [ref=e1040]': 1st Approver:You can take leave but please test Term and information task
+                        - generic "2nd Approver" [ref=e1042]:
+                          - 'generic "2nd Approver: ." [ref=e1044]': 2nd Approver:.
+                    - cell "Approved" [ref=e1045]
+                    - cell [ref=e1051]:
+                      - button "" [ref=e1055] [cursor=pointer]
+                  - row [ref=e1057]:
+                    - cell "7" [ref=e1058]
+                    - cell "Nagnath Gejage EMP-31360" [ref=e1060]:
+                      - generic [ref=e1063]:
+                        - generic [ref=e1064] [cursor=pointer]
+                        - generic [ref=e1066]:
+                          - generic [ref=e1067]: Nagnath Gejage
+                          - generic [ref=e1068]: EMP-31360
+                    - cell "Casual" [ref=e1069]
+                    - cell "06/12/2024 To 06/12/2024" [ref=e1071]
+                    - cell "0.5" [ref=e1073]
+                    - cell "06/12/2024" [ref=e1077]
+                    - cell " " [ref=e1079]:
+                      - generic [ref=e1082]:
+                        - generic [ref=e1083]:
+                          - generic [ref=e1084] [cursor=pointer]
+                          - generic [ref=e1086]: 
+                        - generic [ref=e1088]:
+                          - generic [ref=e1089] [cursor=pointer]
+                          - generic [ref=e1091]: 
+                    - cell "1st Approver:ok 2nd Approver:." [ref=e1093]:
+                      - generic [ref=e1094]:
+                        - generic "1st Approver" [ref=e1096]:
+                          - 'generic "1st Approver: ok" [ref=e1098]': 1st Approver:ok
+                        - generic "2nd Approver" [ref=e1100]:
+                          - 'generic "2nd Approver: ." [ref=e1102]': 2nd Approver:.
+                    - cell "Approved" [ref=e1103]
+                    - cell [ref=e1109]:
+                      - button "" [ref=e1113] [cursor=pointer]
+              - generic [ref=e1116]:
+                - generic [ref=e1117]: Showing 1 to 7 of 7 entries
+                - button "First Page" [disabled]
+                - button "Previous Page" [disabled]
+                - button "1" [ref=e1119] [cursor=pointer]
+                - button "Next Page" [disabled]
+                - button "Last Page" [disabled]
+                - generic [ref=e1120] [cursor=pointer]:
+                  - combobox "Rows per page" [ref=e1121]: "25"
+                  - button "dropdown trigger" [ref=e1122]
+        - contentinfo [ref=e451]:
+          - generic [ref=e452]: © 2026 Befree Pvt Ltd. All Rights Reserved.
+          - generic [ref=e453]: Befree Workspace [ --- QA --- ]
+    - generic:
+      - generic:
+        - alertdialog
+      - generic:
+        - alertdialog
+  - dialog "Apply Leave" [ref=e1127]:
+    - generic [ref=e1130]:
+      - generic [ref=e1131]: Apply Leave
+      - generic [ref=e1132]:
+        - button [ref=e1134] [cursor=pointer]
+        - button "Close" [ref=e1140] [cursor=pointer]
+    - generic [ref=e1146]:
+      - generic [ref=e1148]:
+        - generic [ref=e1149] [cursor=pointer]:
+          - combobox [active] [ref=e1150]
+          - button "dropdown trigger" [ref=e1151]
+        - generic: Leave Type *
+      - generic [ref=e1156]:
+        - generic [ref=e1158]:
+          - combobox [ref=e1159]
+          - button "Choose Date" [ref=e1160] [cursor=pointer]:
+            - generic [ref=e1161]: 
+        - generic: From Date *
+      - generic [ref=e1163]:
+        - generic [ref=e1165]:
+          - combobox [ref=e1166]
+          - button "Choose Date" [ref=e1167] [cursor=pointer]:
+            - generic [ref=e1168]: 
+        - generic: To Date *
+      - generic [ref=e1169]:
+        - generic [ref=e1170]: Have you inform to team incharge about this leave? *
+        - group [ref=e1171]:
+          - generic [ref=e1172] [cursor=pointer]: "No"
+          - generic [ref=e1175] [cursor=pointer]: "Yes"
+      - generic [ref=e1178]:
+        - generic [ref=e1179]: Did you check weekly task list? *
+        - group [ref=e1180]:
+          - generic [ref=e1181] [cursor=pointer]: "No"
+          - generic [ref=e1184] [cursor=pointer]: "Yes"
+      - generic [ref=e1187]:
+        - generic [ref=e1188]: Was there anything due while you are on leave? *
+        - group [ref=e1189]:
+          - generic [ref=e1190] [cursor=pointer]: "No"
+          - generic [ref=e1193] [cursor=pointer]: "Yes"
+      - generic [ref=e1197]:
+        - textbox [ref=e1198]
+        - generic: If due - you must talk to team incharge to make sure it has been allocated to other team member. Write your comments. *
+      - generic [ref=e1200]:
+        - textbox [ref=e1201]
+        - generic: Reason for Leave *
+      - button "Save" [disabled] [ref=e1203]

@@ -1,0 +1,4 @@
+[  518943ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[  519108ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[  519680ms] Transition was skipped. New ViewTransition started
+[  519794ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GLB4TPBM.js:937

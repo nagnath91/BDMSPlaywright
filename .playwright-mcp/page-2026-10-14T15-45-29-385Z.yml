@@ -1,0 +1,197 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /my/dashboard
+        - img "app logo" [ref=e7]
+      - heading "My Profile" [level=1] [ref=e454]
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "🤝 Ask your Buddy" [ref=e12] [cursor=pointer]
+          - button "" [ref=e15] [cursor=pointer]
+          - generic [ref=e18]:
+            - button "" [ref=e20] [cursor=pointer]
+            - generic [ref=e22]: "7"
+        - 'button "My Leaves: 0" [ref=e24] [cursor=pointer]':
+          - generic [aria-hidden] [ref=e25]: 
+          - generic [ref=e26]: "My Leaves:"
+          - generic [ref=e27]: "0"
+        - generic [ref=e28]:
+          - generic [ref=e29]: "In: 11:36:21"
+          - generic [ref=e30]: "Spent: 09:39:07"
+        - button "80" [ref=e31] [cursor=pointer]
+        - button [ref=e32] [cursor=pointer]:
+          - generic [aria-hidden] [ref=e33]: 
+        - button "avatar Nagnath Gejage Group Manager " [ref=e35] [cursor=pointer]:
+          - img "avatar" [ref=e36]
+          - generic [ref=e37]:
+            - generic [ref=e38]: Nagnath Gejage
+            - generic [ref=e39]: Group Manager
+          - generic [ref=e40]: 
+    - list [ref=e43]:
+      - listitem [ref=e44]:
+        - link " Dashboard" [ref=e45] [cursor=pointer]:
+          - /url: /my/dashboard
+          - generic [ref=e46]: 
+          - generic [ref=e47]: Dashboard
+          - text: 
+      - listitem [ref=e48]:
+        - link " My Profile" [active] [ref=e49] [cursor=pointer]:
+          - /url: /my
+          - generic [ref=e50]: 
+          - generic [ref=e51]: My Profile
+          - text: 
+        - list [ref=e455]:
+          - listitem [ref=e456]:
+            - link "My Profile" [ref=e457] [cursor=pointer]:
+              - /url: /my/profile
+          - listitem [ref=e459]:
+            - link "My Leaves" [ref=e460] [cursor=pointer]:
+              - /url: /my/leaves
+          - listitem [ref=e462]:
+            - link "My Holiday Working" [ref=e463] [cursor=pointer]:
+              - /url: /my/holiday-working
+          - listitem [ref=e465]:
+            - link "My Award" [ref=e466] [cursor=pointer]:
+              - /url: /my/awards
+          - listitem [ref=e468]:
+            - link "My Lunch" [ref=e469] [cursor=pointer]:
+              - /url: /my/lunch
+          - listitem [ref=e471]:
+            - link "Befree Buddy" [ref=e472] [cursor=pointer]:
+              - /url: /my/connection
+      - listitem [ref=e52]:
+        - link " Workflow" [ref=e53] [cursor=pointer]:
+          - /url: /workflow
+          - generic [ref=e54]: 
+          - generic [ref=e55]: Workflow
+          - text: 
+      - listitem [ref=e56]:
+        - link " Client" [ref=e57] [cursor=pointer]:
+          - /url: /client
+          - generic [ref=e58]: 
+          - generic [ref=e59]: Client
+          - text: 
+      - listitem [ref=e60]:
+        - link " HR" [ref=e61] [cursor=pointer]:
+          - /url: /hrms
+          - generic [ref=e62]: 
+          - generic [ref=e63]: HR
+          - text: 
+    - generic [ref=e64]:
+      - generic [ref=e66]:
+        - navigation [ref=e67]:
+          - navigation [ref=e70]:
+            - list [ref=e71]:
+              - listitem [ref=e72]:
+                - link "" [ref=e73] [cursor=pointer]:
+                  - /url: /my/dashboard
+              - listitem [ref=e75]
+              - listitem [ref=e474]:
+                - link "My Profile" [ref=e475] [cursor=pointer]:
+                  - /url: /my/profile
+        - generic [ref=e479]:
+          - generic [ref=e481]:
+            - group [ref=e483]:
+              - generic [ref=e484] [cursor=pointer]: Profile
+              - generic [ref=e487] [cursor=pointer]: Team Details
+            - generic [ref=e493]:
+              - generic [ref=e494]:
+                - generic [ref=e495]:
+                  - generic [ref=e496]: 
+                  - generic [ref=e497]: "31360"
+                - generic [ref=e498]: "|"
+                - generic [ref=e499]:
+                  - generic [ref=e500]: 
+                  - generic [ref=e501]: Nagnath Gejage
+                - generic [ref=e502]: "|"
+                - generic [ref=e503]:
+                  - generic [ref=e504]: 
+                  - generic [ref=e505]: Senior Associate
+              - generic [ref=e507]:
+                - generic [ref=e508]:
+                  - generic [ref=e509]: 
+                  - generic [ref=e510]: Befree Private Limited.
+                - generic [ref=e511]: "|"
+                - generic [ref=e512]:
+                  - generic [ref=e513]: 
+                  - generic [ref=e514]: nagnath.g@befree.com.au
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - generic [ref=e517]: Joining
+              - generic [ref=e518]: 09/07/2024
+            - generic [ref=e520]:
+              - generic [ref=e521]: Experience
+              - generic [ref=e522]: 2 year(s) 3 month(s)
+            - generic [ref=e524]:
+              - generic [ref=e525]: Grade / Level
+              - generic [ref=e526]: G3 / L1
+            - generic [ref=e528]:
+              - generic [ref=e529]: Notice
+              - generic [ref=e530]: 90 Days
+            - generic [ref=e531]:
+              - generic [ref=e532]: Blood
+              - generic [ref=e533]: A+
+            - generic [ref=e535]:
+              - generic [ref=e536]: Age
+              - generic [ref=e537]: "35"
+          - generic [ref=e539]:
+            - generic [ref=e541]:
+              - generic [ref=e542]: Personal
+              - generic [ref=e543]:
+                - generic [ref=e544]:
+                  - generic [ref=e545]: Full Name
+                  - generic [ref=e546]: Nagnath Gejage
+                - generic [ref=e547]:
+                  - generic [ref=e548]: Employee ID
+                  - generic [ref=e549]: EMP-31360
+                - generic [ref=e552]:
+                  - generic [ref=e553]: Gender
+                  - generic [ref=e554]: Male
+                - generic [ref=e557]:
+                  - generic [ref=e558]: Marital Status
+                  - generic [ref=e559]: Married
+                - generic [ref=e560]:
+                  - generic [ref=e561]: Other Email
+                  - generic [ref=e562]: gejagenagnath7@gmail.com
+                - generic [ref=e563]:
+                  - generic [ref=e564]: Birth Date
+                  - generic [ref=e565]: 25/02/1991
+                - generic [ref=e568]:
+                  - generic [ref=e569]: Blood Group
+                  - generic [ref=e570]: A+
+            - generic [ref=e574]:
+              - generic [ref=e575]: Emergency & Address
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - generic [ref=e578]: Emergency No. 1
+                  - generic [ref=e579]: "7774896878"
+                - generic [ref=e580]:
+                  - generic [ref=e581]: Emergency No. 2
+                  - generic [ref=e582]: "7498966337"
+                - generic [ref=e583]:
+                  - generic [ref=e584]: Notice Period
+                  - generic [ref=e585]: 90 Days
+                - generic [ref=e586]:
+                  - generic [ref=e587]: Permanent Address
+                  - generic [ref=e588]: At. Rede, Post Mandki, Near ZP School Rede, Malshiras, Solapur (MH) 413107
+                - generic [ref=e589]:
+                  - generic [ref=e590]: Present Address
+                  - generic [ref=e591]: At. Rede, Post Mandki, Near ZP School Rede, Malshiras,
+            - generic [ref=e594]:
+              - generic [ref=e595]: Reporting & Approvals
+              - generic [ref=e596]:
+                - generic [ref=e597]:
+                  - generic [ref=e598]: Reporting To
+                  - generic [ref=e599]: Pankaj Nahar 1711
+                - generic [ref=e600]:
+                  - generic [ref=e601]: Team Incharge
+                  - generic [ref=e602]: Vasant Darji 4
+      - contentinfo [ref=e451]:
+        - generic [ref=e452]: © 2026 Befree Pvt Ltd. All Rights Reserved.
+        - generic [ref=e453]: Befree Workspace [ --- QA --- ]
+  - generic:
+    - generic:
+      - alertdialog
+    - generic:
+      - alertdialog

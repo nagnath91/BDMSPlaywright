@@ -1,0 +1,391 @@
+- generic [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e4]:
+      - generic [ref=f7e5]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: /my/dashboard
+          - img "app logo" [ref=f7e7]
+        - heading "My Dashboard" [level=1] [ref=f7e8]
+        - generic [ref=f7e9]:
+          - generic [ref=f7e10]:
+            - button "🤝 Ask your Buddy" [ref=f7e12] [cursor=pointer]
+            - button "" [ref=f7e15] [cursor=pointer]
+            - generic [ref=f7e18]:
+              - button "" [ref=f7e20] [cursor=pointer]
+              - generic [ref=f7e22]: "7"
+          - 'button "My Leaves: 0" [ref=f7e24] [cursor=pointer]':
+            - generic [aria-hidden] [ref=f7e25]: 
+            - generic [ref=f7e26]: "My Leaves:"
+            - generic [ref=f7e27]: "0"
+          - generic [ref=f7e28]:
+            - generic [ref=f7e29]: "In: 12:11:05"
+            - generic [ref=f7e30]: "Spent: 00:42:24"
+          - button "00" [ref=f7e31] [cursor=pointer]
+          - button [ref=f7e32] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f7e33]: 
+          - button "avatar Aachal Kashyap In-house " [ref=f7e35] [cursor=pointer]:
+            - img "avatar" [ref=f7e36]
+            - generic [ref=f7e37]:
+              - generic [ref=f7e38]: Aachal Kashyap
+              - generic [ref=f7e39]: In-house
+            - generic [ref=f7e40]: 
+      - list [ref=f7e43]:
+        - listitem [ref=f7e44]:
+          - link " Dashboard" [ref=f7e45] [cursor=pointer]:
+            - /url: /my/dashboard
+            - generic [ref=f7e46]: 
+            - generic [ref=f7e47]: Dashboard
+            - text: 
+        - listitem [ref=f7e48]:
+          - link " My Profile" [ref=f7e49] [cursor=pointer]:
+            - /url: /my
+            - generic [ref=f7e50]: 
+            - generic [ref=f7e51]: My Profile
+            - text: 
+        - listitem [ref=f7e52]:
+          - link " Workflow" [ref=f7e53] [cursor=pointer]:
+            - /url: /workflow
+            - generic [ref=f7e54]: 
+            - generic [ref=f7e55]: Workflow
+            - text: 
+        - listitem [ref=f7e56]:
+          - link " Client" [ref=f7e57] [cursor=pointer]:
+            - /url: /client
+            - generic [ref=f7e58]: 
+            - generic [ref=f7e59]: Client
+            - text: 
+        - listitem [ref=f7e60]:
+          - link " HR" [ref=f7e61] [cursor=pointer]:
+            - /url: /hrms
+            - generic [ref=f7e62]: 
+            - generic [ref=f7e63]: HR
+            - text: 
+      - generic [ref=f7e64]:
+        - generic [ref=f7e66]:
+          - navigation [ref=f7e67]:
+            - generic [ref=f7e68]:
+              - navigation [ref=f7e70]:
+                - list [ref=f7e71]:
+                  - listitem [ref=f7e72]:
+                    - link "" [ref=f7e73] [cursor=pointer]:
+                      - /url: /my/dashboard
+                  - listitem [ref=f7e75]
+                  - listitem [ref=f7e79]:
+                    - link "My" [ref=f7e80] [cursor=pointer]:
+                      - /url: /my
+                  - listitem [ref=f7e82]
+                  - listitem [ref=f7e86]:
+                    - link "My Dashboard" [ref=f7e87] [cursor=pointer]:
+                      - /url: /my/dashboard
+              - button [ref=f7e90] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f7e91]: 
+          - generic [ref=f7e93]:
+            - generic [ref=f7e94]:
+              - generic [ref=f7e95]:
+                - generic [ref=f7e97]:
+                  - heading "Good Afternoon Aachal Kashyap! " [level=5] [ref=f7e98]:
+                    - text: Good Afternoon Aachal Kashyap!
+                    - generic [ref=f7e99]: 
+                  - paragraph [ref=f7e100]: Have a productive day !!
+                - generic [ref=f7e102]:
+                  - img "avatar" [ref=f7e104]
+                  - generic [ref=f7e105]:
+                    - heading "Aachal Kashyap" [level=5] [ref=f7e106]
+                    - paragraph [ref=f7e107]: In-house
+                    - paragraph [ref=f7e108]: GIFT Tower-1
+                    - button "View Profile" [ref=f7e109] [cursor=pointer]
+              - generic [ref=f7e111]:
+                - generic [ref=f7e112]:
+                  - generic [ref=f7e114]: 
+                  - heading "Members on Leave" [level=5] [ref=f7e116]
+                - generic [ref=f7e117]:
+                  - generic [ref=f7e119]: 
+                  - generic [ref=f7e120]: Full team available!
+                  - generic [ref=f7e121]: No one is on leave.
+              - generic [ref=f7e123]:
+                - generic [ref=f7e124]:
+                  - generic [ref=f7e126]: 
+                  - heading "Today's Birthdays" [level=5] [ref=f7e127]
+                - region "Today's Birthdays" [ref=f7e128]:
+                  - list [ref=f7e129]:
+                    - listitem [ref=f7e130]:
+                      - generic [ref=f7e132]:
+                        - generic [ref=f7e133] [cursor=pointer]
+                        - generic [ref=f7e135]:
+                          - generic [ref=f7e136]: Shobhana Desai
+                          - generic [ref=f7e137]: Group Manager
+                    - listitem [ref=f7e138]:
+                      - generic [ref=f7e140]:
+                        - generic [ref=f7e141] [cursor=pointer]
+                        - generic [ref=f7e143]:
+                          - generic [ref=f7e144]: Maulik Shah
+                          - generic [ref=f7e145]: Superrecords
+                    - listitem [ref=f7e146]:
+                      - generic [ref=f7e148]:
+                        - generic [ref=f7e149] [cursor=pointer]
+                        - generic [ref=f7e151]:
+                          - generic [ref=f7e152]: Shivani Shah
+                          - generic [ref=f7e153]: Superrecords
+                    - listitem [ref=f7e154]:
+                      - generic [ref=f7e156]:
+                        - generic [ref=f7e157] [cursor=pointer]
+                        - generic [ref=f7e159]:
+                          - generic [ref=f7e160]: Trisha Devamma Kaliyanda Sandeep
+                          - generic [ref=f7e161]: Superrecords
+                    - listitem [ref=f7e162]:
+                      - generic [ref=f7e164]:
+                        - generic [ref=f7e165] [cursor=pointer]
+                        - generic [ref=f7e167]:
+                          - generic [ref=f7e168]: Madhumitha B
+                          - generic [ref=f7e169]: Superrecords
+              - generic [ref=f7e170]:
+                - generic [ref=f7e171]:
+                  - generic [ref=f7e173]: 
+                  - heading "Quick Links" [level=5] [ref=f7e174]
+                - generic [ref=f7e175]:
+                  - generic [ref=f7e176] [cursor=pointer]:
+                    - generic [ref=f7e178]: 
+                    - generic [ref=f7e179]: Read Policies
+                  - button "Add Timesheet" [ref=f7e180] [cursor=pointer]:
+                    - generic [ref=f7e182]: 
+                  - generic [ref=f7e184] [cursor=pointer]:
+                    - generic [ref=f7e186]: 
+                    - generic [ref=f7e187]: Daily Report
+                  - generic [ref=f7e188] [cursor=pointer]:
+                    - generic [ref=f7e190]: 
+                    - generic [ref=f7e191]: Today's Timesheet
+                  - generic [ref=f7e192] [cursor=pointer]:
+                    - generic [ref=f7e194]: 
+                    - generic [ref=f7e195]: Worksheet
+                  - link "BK Knowledge Bank" [ref=f7e196] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/10ceidL5LlnUKFlSP7N1Uk957Amq1wM3EkT6Wfus2Dx4/edit?usp=sharing
+                    - generic [ref=f7e198]: 
+                    - generic [aria-hidden] [ref=f7e200]: 
+                  - link "Knowledge Bank - BS-AU" [ref=f7e201] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/10ceidL5LlnUKFlSP7N1Uk957Amq1wM3EkT6Wfus2Dx4/edit?usp=sharing
+                    - generic [ref=f7e203]: 
+                    - generic [aria-hidden] [ref=f7e205]: 
+                  - link "Payroll Knowledge Bank" [ref=f7e206] [cursor=pointer]:
+                    - /url: https://docs.google.com/spreadsheets/d/1MJdBlrAL_-zvsiBRJHlz_qVM5QUGSVMovhA84ZIXYUI/edit#gid=1609323003
+                    - generic [ref=f7e208]: 
+                    - generic [aria-hidden] [ref=f7e210]: 
+                  - generic [ref=f7e211] [cursor=pointer]:
+                    - generic [ref=f7e213]: 
+                    - generic [ref=f7e214]: Brand Portal
+                  - generic [ref=f7e215] [cursor=pointer]:
+                    - generic [ref=f7e217]: 
+                    - generic [ref=f7e218]: Asmakam Ayurveda
+            - generic [ref=f7e219]:
+              - generic [ref=f7e221]:
+                - generic [ref=f7e222]:
+                  - generic [ref=f7e224]: 
+                  - heading "Daily Motivation" [level=5] [ref=f7e225]
+                - paragraph [ref=f7e227]: "\"अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत। अव्यक्तनिधनान्येव तत्र का परिदेवना॥ (Beings are unmanifest in the beginning manifest in the middle and unmanifest again at the end. What then is there to grieve?) - Bhagavad Gita 2.28\""
+              - generic [ref=f7e228]:
+                - generic [ref=f7e229]:
+                  - generic [ref=f7e230]:
+                    - generic [ref=f7e232]: 
+                    - heading "New Hires" [level=5] [ref=f7e233]
+                  - generic [ref=f7e234]:
+                    - generic [ref=f7e235] [cursor=pointer]:
+                      - generic [ref=f7e236]:
+                        - combobox: All
+                      - generic [ref=f7e237]: All
+                    - group [ref=f7e243]:
+                      - generic [ref=f7e244] [cursor=pointer]: Last Week
+                      - generic [ref=f7e247] [cursor=pointer]: This Week
+                      - generic [ref=f7e250] [cursor=pointer]: This Month
+                      - generic [ref=f7e253] [cursor=pointer]: Last Month
+                - generic [ref=f7e256]:
+                  - generic [ref=f7e257]:
+                    - paragraph [ref=f7e258]: Total New Hires
+                    - paragraph [ref=f7e259]: "1"
+                  - generic [ref=f7e260]:
+                    - paragraph [ref=f7e261]: Top Department
+                    - paragraph [ref=f7e262]: N/A
+                  - generic [ref=f7e263]:
+                    - paragraph [ref=f7e264]: Locations
+                    - paragraph [ref=f7e265]: "1"
+                - generic [ref=f7e272]:
+                  - generic [ref=f7e274] [cursor=pointer]
+                  - heading "Nayan Dabhi" [level=6] [ref=f7e277]
+                  - generic [ref=f7e279]:
+                    - paragraph
+                    - generic [ref=f7e280]: BCH - 17
+              - generic [ref=f7e282]:
+                - generic [ref=f7e284]:
+                  - generic [ref=f7e285]:
+                    - generic [ref=f7e287]: 
+                    - heading "Upcoming Holiday Of Month" [level=5] [ref=f7e288]
+                  - generic "Choose Date" [ref=f7e291]:
+                    - generic [ref=f7e293]:
+                      - generic [ref=f7e294]:
+                        - button "Previous Month" [ref=f7e296] [cursor=pointer]
+                        - generic [ref=f7e300]:
+                          - button "Choose Month" [ref=f7e301] [cursor=pointer]: October
+                          - button "Choose Year" [ref=f7e302] [cursor=pointer]: "2026"
+                        - button "Next Month" [ref=f7e304] [cursor=pointer]
+                      - grid [ref=f7e308]:
+                        - rowgroup [ref=f7e309]:
+                          - row [ref=f7e310]:
+                            - columnheader "Su" [ref=f7e311]
+                            - columnheader "Mo" [ref=f7e312]
+                            - columnheader "Tu" [ref=f7e313]
+                            - columnheader "We" [ref=f7e314]
+                            - columnheader "Th" [ref=f7e315]
+                            - columnheader "Fr" [ref=f7e316]
+                            - columnheader "Sa" [ref=f7e317]
+                        - rowgroup [ref=f7e318]:
+                          - row [ref=f7e319]:
+                            - gridcell "27" [ref=f7e320]
+                            - gridcell "28" [ref=f7e321]
+                            - gridcell "29" [ref=f7e322]
+                            - gridcell "30" [ref=f7e323]
+                            - gridcell "1" [ref=f7e324]
+                            - gridcell "2" [ref=f7e327]
+                            - gridcell "3" [ref=f7e330]
+                          - row [ref=f7e333]:
+                            - gridcell "4" [ref=f7e334]
+                            - gridcell "5" [ref=f7e337]
+                            - gridcell "6" [ref=f7e340]
+                            - gridcell "7" [ref=f7e343]
+                            - gridcell "8" [ref=f7e346]
+                            - gridcell "9" [ref=f7e349]
+                            - gridcell "10" [ref=f7e352]
+                          - row [ref=f7e355]:
+                            - gridcell "11" [ref=f7e356]
+                            - gridcell "12" [ref=f7e359]
+                            - gridcell "13" [ref=f7e362]
+                            - gridcell "14" [ref=f7e365]
+                            - gridcell "15" [ref=f7e368]
+                            - gridcell "16" [ref=f7e371]
+                            - gridcell "17" [ref=f7e374]
+                          - row [ref=f7e377]:
+                            - gridcell "18" [ref=f7e378]
+                            - gridcell "19" [ref=f7e381]
+                            - gridcell "20" [ref=f7e384]
+                            - gridcell "21" [ref=f7e387]
+                            - gridcell "22" [ref=f7e390]
+                            - gridcell "23" [ref=f7e393]
+                            - gridcell "24" [ref=f7e396]
+                          - row [ref=f7e399]:
+                            - gridcell "25" [ref=f7e400]
+                            - gridcell "26" [ref=f7e403]
+                            - gridcell "27" [ref=f7e406]
+                            - gridcell "28" [ref=f7e409]
+                            - gridcell "29" [ref=f7e412]
+                            - gridcell "30" [ref=f7e415]
+                            - gridcell "31" [ref=f7e418]
+                - generic [ref=f7e421]:
+                  - generic [ref=f7e422]:
+                    - generic [ref=f7e423]:
+                      - generic [ref=f7e425]: 
+                      - heading "Holidays List" [level=5] [ref=f7e426]
+                    - generic [ref=f7e427]:
+                      - generic [ref=f7e428]:
+                        - generic [ref=f7e429]: 
+                        - generic [ref=f7e430]: India Public Holiday - 2026
+                      - link [ref=f7e431] [cursor=pointer]:
+                        - /url: https://befreecrm.com.au:4100/docs/Indian Office Holiday List - Sheet2026.pdf
+                        - generic [aria-hidden] [ref=f7e432]: 
+                    - generic [ref=f7e433]:
+                      - generic [ref=f7e434]:
+                        - generic [ref=f7e435]: 
+                        - generic [ref=f7e436]: Australian / UK / US Public Holidays - 2026
+                      - link [ref=f7e437] [cursor=pointer]:
+                        - /url: https://befreecrm.com.au:4100/docs/Australian UK & US Public Holidays - 2026.pdf
+                        - generic [aria-hidden] [ref=f7e438]: 
+                  - generic [ref=f7e439]:
+                    - generic [ref=f7e440]:
+                      - generic [ref=f7e441]:
+                        - generic [ref=f7e443]: 
+                        - heading "Today's Menu" [level=5] [ref=f7e444]
+                      - generic [ref=f7e445]: Not Booked
+                    - generic [ref=f7e447]:
+                      - generic [ref=f7e448]: 
+                      - paragraph [ref=f7e449]: You haven't booked today's lunch.
+        - contentinfo [ref=f7e451]:
+          - generic [ref=f7e452]: © 2026 Befree Pvt Ltd. All Rights Reserved.
+          - generic [ref=f7e453]: Befree Workspace [ --- QA --- ]
+    - generic:
+      - generic:
+        - alertdialog
+      - generic:
+        - alertdialog
+  - dialog "Add Timesheet" [ref=f7e472]:
+    - generic [ref=f7e475]:
+      - generic [ref=f7e476]: Add Timesheet
+      - generic [ref=f7e477]:
+        - button [ref=f7e479] [cursor=pointer]
+        - button "Close" [ref=f7e485] [cursor=pointer]
+    - generic [ref=f7e491]:
+      - generic [ref=f7e493]:
+        - combobox [disabled] [ref=f7e496]: 14/10/2026
+        - generic: Date
+      - generic [ref=f7e498]:
+        - generic [ref=f7e499] [cursor=pointer]:
+          - combobox [ref=f7e500]
+          - button "dropdown trigger" [ref=f7e501]:
+            - generic [ref=f7e502]: 
+        - generic: Parent Trading Name
+      - generic [ref=f7e504]:
+        - generic [ref=f7e505] [cursor=pointer]:
+          - combobox "Befree Pty Limited" [ref=f7e588]
+          - button "dropdown trigger" [ref=f7e507]:
+            - generic [ref=f7e508]: 
+        - generic: Trading Name *
+      - generic [ref=f7e510]:
+        - generic [ref=f7e592] [cursor=pointer]:
+          - combobox "IT Web Development" [ref=f7e694]
+          - button "dropdown trigger" [ref=f7e594]:
+            - generic [ref=f7e595]: 
+        - generic: Master Activity *
+      - generic [ref=f7e514]:
+        - generic [ref=f7e698] [cursor=pointer]:
+          - combobox [expanded] [ref=f7e699]
+          - button "dropdown trigger" [expanded] [ref=f7e700]:
+            - generic [ref=f7e701]: 
+        - generic: Task *
+      - generic [ref=f7e516]:
+        - generic:
+          - combobox [disabled]
+          - button "dropdown trigger":
+            - generic: 
+        - generic: Frequency *
+      - generic [ref=f7e518]:
+        - generic:
+          - combobox [disabled]
+          - button "dropdown trigger":
+            - generic: 
+        - generic: Period *
+      - generic [ref=f7e520]:
+        - generic [ref=f7e521] [cursor=pointer]:
+          - combobox [ref=f7e522]
+          - button "dropdown trigger" [ref=f7e523]:
+            - generic [ref=f7e524]: 
+        - generic: Sub Activity *
+      - generic [ref=f7e526]:
+        - combobox [ref=f7e529]
+        - generic: Start Time
+      - generic [ref=f7e531]:
+        - combobox [ref=f7e534]
+        - generic: End Time
+      - generic [ref=f7e536]:
+        - generic [ref=f7e537]:
+          - spinbutton [ref=f7e538]
+          - generic [ref=f7e539]:
+            - button [aria-hidden] [ref=f7e540] [cursor=pointer]
+            - button [aria-hidden] [ref=f7e544] [cursor=pointer]
+        - generic: Units *
+      - generic [ref=f7e549]:
+        - textbox [ref=f7e550]
+        - generic: Notes
+      - generic [ref=f7e551]:
+        - button "" [ref=f7e553] [cursor=pointer]
+        - button "Cancel" [ref=f7e555] [cursor=pointer]
+        - button "Save & Add New" [ref=f7e557] [cursor=pointer]
+        - button "Save" [ref=f7e559] [cursor=pointer]
+  - searchbox "Search" [active] [ref=f7e708]:
+    - listbox "Option List" [ref=f7e709]:
+      - option "Payroll module" [ref=f7e711] [cursor=pointer]
+      - option "Web Development General" [ref=f7e714] [cursor=pointer]

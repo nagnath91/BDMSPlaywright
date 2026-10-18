@@ -1,0 +1,20 @@
+[     250ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[     424ms] Transition was skipped. New ViewTransition started
+[  138655ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[  138764ms] Transition was skipped. New ViewTransition started
+[  139009ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GLB4TPBM.js:937
+[  139150ms] [ERROR] ERROR TypeError: Cannot read properties of null (reading 'addEventListener')
+    at r.addEventListener (http://10.10.20.41/chunk-QZZZSVEB.js:1:84099)
+    at r.addEventListener (http://10.10.20.41/chunk-QZZZSVEB.js:1:75130)
+    at An.listen (http://10.10.20.41/chunk-QZZZSVEB.js:1:80912)
+    at Re.listen (http://10.10.20.41/browser-T6VANCXW.js:1:61039)
+    at e.leave (http://10.10.20.41/main-365GWAWI.js:311:10017)
+    at e.clickListener (http://10.10.20.41/main-365GWAWI.js:311:8705)
+    at http://10.10.20.41/main-365GWAWI.js:311:12376
+    at bl (http://10.10.20.41/chunk-DCQX6U25.js:7:106320)
+    at r (http://10.10.20.41/chunk-DCQX6U25.js:7:106168)
+    at HTMLButtonElement.<anonymous> (http://10.10.20.41/chunk-QZZZSVEB.js:1:81062) @ http://10.10.20.41/chunk-DCQX6U25.js:6
+[  139648ms] [INFO] PWA true @ http://10.10.20.41/main-365GWAWI.js:332
+[  139694ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://10.10.20.41/auth/login:0
+[  139823ms] Transition was skipped. New ViewTransition started
+[  139988ms] [LOG] defaultLabel property is deprecated since 16.6.0, use placeholder instead @ http://10.10.20.41/chunk-GLB4TPBM.js:937
