@@ -13,6 +13,7 @@ export class LoginPage {
   readonly errorToast: Locator;
   readonly workLocationDialog: Locator;
   readonly workLocationSaveButton: Locator;
+  readonly leaveConfirmYesButton: Locator;
 
   static readonly URL = 'http://10.10.20.41/auth/login';
   static readonly DASHBOARD_URL_PATTERN = /\/my\/dashboard/;
@@ -33,6 +34,11 @@ export class LoginPage {
     // the dashboard with a "Work Location" modal that must be dismissed.
     this.workLocationDialog = page.getByRole('dialog', { name: 'Work Location' });
     this.workLocationSaveButton = this.workLocationDialog.getByRole('button', { name: 'Save Location' });
+    // Leave confirmation pop-up (24th-26th of the month): confirm with "Yes".
+    this.leaveConfirmYesButton = page
+      .locator('[role="dialog"], [role="alertdialog"]')
+      .filter({ hasText: /leave/i })
+      .getByRole('button', { name: /^\s*yes\s*$/i });
   }
 
   async goto(): Promise<void> {
@@ -129,7 +135,25 @@ export class LoginPage {
       return this.waitForLoginOutcome(timeout);
     }
 
+    if (result === 'success') await this.confirmLeavePopup();
+
     return result ?? 'error';
+  }
+
+  /**
+   * On the 24th, 25th and 26th of every month the app shows a leave
+   * confirmation pop-up after login that must be answered with "Yes". It does
+   * not appear every time (or on other days), so click "Yes" only when it
+   * shows up; otherwise carry on after a short wait.
+   */
+  private async confirmLeavePopup(timeout = 4000): Promise<void> {
+    try {
+      await this.leaveConfirmYesButton.waitFor({ state: 'visible', timeout });
+      await this.leaveConfirmYesButton.click({ timeout: 5000 });
+      await this.leaveConfirmYesButton.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => {});
+    } catch {
+      // Pop-up not shown (or closed by itself) - nothing to confirm.
+    }
   }
 
   async getErrorMessage(): Promise<string | null> {

@@ -108,7 +108,7 @@ export class ApplyLeavePage {
    * Picks a date through the PrimeNG calendar popup. Typing into the input
    * does not update the form model, so the calendar must be clicked.
    */
-  async pickDate(field: 'From Date' | 'To Date', date: Date): Promise<void> {
+  async pickDate(field: 'From Date' | 'To Date', date: Date): Promise<boolean> {
     await this.dialog
       .locator('p-floatlabel')
       .filter({ hasText: field })
@@ -133,11 +133,29 @@ export class ApplyLeavePage {
       await expect(this.calendar.getByRole('button', { name: 'Choose Year' })).toHaveText(String(Math.floor(newIndex / 12)));
     }
 
-    await this.calendar
+    const day = this.calendar
       .locator('td:not(.p-datepicker-other-month)')
-      .getByText(String(date.getDate()), { exact: true })
-      .click();
+      .getByText(String(date.getDate()), { exact: true });
+    await day.waitFor({ state: 'visible' });
+    // Dates that already have a leave (or are not selectable) are disabled in the
+    // calendar; clicking them would wait forever, so report it and let the caller move on.
+    const cell = day.locator('xpath=ancestor::td[1]');
+    const cls = `${(await cell.getAttribute('class')) ?? ''} ${(await day.getAttribute('class')) ?? ''}`;
+    if (/disabled/.test(cls) || (await day.getAttribute('aria-disabled')) === 'true') {
+      await this.page.keyboard.press('Escape');
+      await this.calendar.waitFor({ state: 'hidden' }).catch(() => {});
+      return false;
+    }
+    try {
+      await day.click({ timeout: 8000 });
+    } catch {
+      // Not clickable (disabled in a way the classes did not reveal) - treat as unavailable.
+      await this.page.keyboard.press('Escape');
+      await this.calendar.waitFor({ state: 'hidden' }).catch(() => {});
+      return false;
+    }
     await expect(this.calendar).toBeHidden();
+    return true;
   }
 
   /** Clicks "Yes" on one of the Yes/No question rows (matched by label text). */
@@ -183,27 +201,53 @@ export class ApplyLeavePage {
   private static readonly CONFLICT_TEXT =
     /already (have|applied|exist)|leave request.*(exist|overlap)|overlap|existing leave/i;
 
-  /** True when the app flags the chosen range as overlapping an existing leave. */
+  /**
+   * True when the app flags the chosen range as overlapping an existing leave
+   * ("You already have a leave request during this date range." under From Date).
+   * The check runs on the server, so give the message a few seconds to show up.
+   */
   async hasDateConflict(): Promise<boolean> {
-    await this.page.waitForTimeout(700);
-    return this.dialog.getByText(ApplyLeavePage.CONFLICT_TEXT).first().isVisible();
+    const message = this.dialog.getByText(ApplyLeavePage.CONFLICT_TEXT).first();
+    try {
+      await message.waitFor({ state: 'visible', timeout: 3500 });
+      return true;
+    } catch {
+      return false;
+    }
   }
-
   /**
    * Picks From/To dates; if the app reports an existing leave in that range,
    * shifts both forward a week and retries so no two leaves share a date.
    * Returns the dates finally used.
    */
   async pickNonConflictingDates(from: Date, to: Date): Promise<{ from: Date; to: Date }> {
-    for (let attempt = 0; attempt < 8; attempt++) {
-      await this.pickDate('From Date', from);
-      await this.pickDate('To Date', to);
-      if (!(await this.hasDateConflict())) return { from, to };
+    // Many leaves can already exist (earlier runs), so keep moving a week at a time for a long while.
+    for (let attempt = 0; attempt < 40; attempt++) {
+      // From Date can't be after an already chosen To Date (and vice versa), so when moving
+      // forward pick To Date first.
+      const ok = attempt === 0
+        ? (await this.pickDate('From Date', from)) && (await this.pickDate('To Date', to))
+        : (await this.pickDate('To Date', to)) && (await this.pickDate('From Date', from));
+      if (ok && !(await this.hasDateConflict())) return { from, to };
 
       from = new Date(from); from.setDate(from.getDate() + 7);
       to = new Date(to); to.setDate(to.getDate() + 7);
     }
     throw new Error('Could not find a free date range for the leave');
+  }
+
+  /**
+   * After a rejected save the dialog can be left with Save disabled, so close it and open a fresh one
+   * (the caller then refills the form). Returns true = the form is empty again.
+   */
+  private async restartDialog(type: LeaveType): Promise<boolean> {
+    await this.page.keyboard.press('Escape');
+    await this.dialog.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => {});
+    if (await this.dialog.isVisible()) await this.dialog.getByRole('button', { name: /close/i }).first().click().catch(() => {});
+    await this.dialog.waitFor({ state: 'hidden', timeout: 5000 }).catch(() => {});
+    await this.openDialog();
+    await this.selectLeaveType(type);
+    return true;
   }
 
   async apply(data: ApplyLeaveData, options: { fullDay?: boolean } = {}): Promise<void> {
@@ -213,17 +257,35 @@ export class ApplyLeavePage {
 
     let from = data.fromDate;
     let to = data.toDate;
-    for (let attempt = 0; attempt < 8; attempt++) {
+    let fresh = true;
+    for (let attempt = 0; attempt < 10; attempt++) {
       // 1st check: the inline "already have a leave request" message after picking dates.
       ({ from, to } = await this.pickNonConflictingDates(from, to));
+      console.log(`[apply] attempt ${attempt + 1}: ${from.toDateString()} - ${to.toDateString()}`);
       if (fullDay) await this.selectFullDayForAllDates();
 
-      await this.answerYes('Have you inform to team incharge');
-      await this.answerYes('Did you check weekly task list');
-      await this.answerYes('Was there anything due while you are on leave');
-      await this.fillComment(data.comment);
-      await this.fillReason(data.reason, data.leaveType);
+      // Answers persist in the dialog across retries; re-clicking a selected 'Yes' would untoggle it.
+      if (fresh) {
+        fresh = false;
+        await this.answerYes('Have you inform to team incharge');
+        await this.answerYes('Did you check weekly task list');
+        await this.answerYes('Was there anything due while you are on leave');
+        await this.fillComment(data.comment);
+        await this.fillReason(data.reason, data.leaveType);
+      }
 
+      // The app can flag the conflict late (once the form is complete): Save then stays
+      // disabled and the message shows. Wait for whichever comes first.
+      const ready = await Promise.race([
+        this.saveButton.waitFor({ state: 'visible' }).then(() => expect(this.saveButton).toBeEnabled({ timeout: 15000 })).then(() => 'ready' as const),
+        this.dialog.getByText(ApplyLeavePage.CONFLICT_TEXT).first().waitFor({ state: 'visible', timeout: 15000 }).then(() => 'conflict' as const),
+      ]).catch(() => 'ready' as const);
+      if (ready === 'conflict' && !(await this.saveButton.isEnabled())) {
+        from = new Date(from); from.setDate(from.getDate() + 7);
+        to = new Date(to); to.setDate(to.getDate() + 7);
+        fresh = await this.restartDialog(data.leaveType);
+        continue;
+      }
       await expect(this.saveButton).toBeEnabled();
       await this.saveButton.click();
 
@@ -232,14 +294,23 @@ export class ApplyLeavePage {
       const outcome = await Promise.race([
         this.successToast.first().waitFor({ state: 'visible', timeout: 15000 }).then(() => 'saved' as const),
         this.errorToast.first().waitFor({ state: 'visible', timeout: 15000 }).then(() => 'error' as const),
+        // The app can also reject the save with the inline message under From Date.
+        this.dialog.getByText(ApplyLeavePage.CONFLICT_TEXT).first().waitFor({ state: 'visible', timeout: 15000 }).then(() => 'inline' as const),
       ]).catch(() => 'none' as const);
 
+      if (outcome === 'inline') {
+        from = new Date(from); from.setDate(from.getDate() + 7);
+        to = new Date(to); to.setDate(to.getDate() + 7);
+        fresh = await this.restartDialog(data.leaveType);
+        continue; // pick the next week's dates and try again
+      }
       if (outcome !== 'error') return; // expectSaved() reports success / missing message
       const message = (await this.errorToast.first().innerText()).trim();      if (ApplyLeavePage.ANNUAL_LIMIT_TEXT.test(message)) throw new LeaveAlreadyTakenError(message);
       if (!ApplyLeavePage.CONFLICT_TEXT.test(message)) return; // other error - expectSaved() reports it
 
       from = new Date(from); from.setDate(from.getDate() + 7);
       to = new Date(to); to.setDate(to.getDate() + 7);
+      fresh = await this.restartDialog(data.leaveType);
       await this.errorToast.first().waitFor({ state: 'hidden', timeout: 15000 }).catch(() => {});
     }
     throw new Error('Could not find a free date range for the leave');
@@ -262,4 +333,15 @@ export class ApplyLeavePage {
     return text;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 

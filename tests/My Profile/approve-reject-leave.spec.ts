@@ -13,7 +13,7 @@ import { loginAs, logout } from '../../utils/auth';
  * to all users (see utils/auth.ts).
  */
 const APPROVER = process.env.APPROVER_USER ?? 'Dilip';
-const EMPLOYEE = 'Darshan Trivedi';
+const EMPLOYEE = 'Vasant Darji';
 
 const leaveTypes: LeaveType[] = ['Casual', 'Comp-off', 'Sick', 'Maternity', 'Residential Program Leave'];
 const decisions: LeaveDecision[] = ['Approve', 'Reject'];

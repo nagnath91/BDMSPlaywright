@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+﻿import { test } from '@playwright/test';
 import { ApplyLeavePage, LeaveType, ONCE_A_YEAR_LEAVES, LeaveAlreadyTakenError } from '../../pages/ApplyLeavePage';
 import { loginAs, logout } from '../../utils/auth';
 
@@ -12,7 +12,7 @@ import { loginAs, logout } from '../../utils/auth';
  * Change LEAVE_USER to run as another user; the password is common to all
  * users (see utils/auth.ts).
  */
-const USERNAME = process.env.LEAVE_USER ?? 'darshant';
+const USERNAME = process.env.LEAVE_USER ?? 'vasant';
 
 /** Today + `months` months (day clamped), pushed forward `extraDays`, skipping Sat/Sun. */
 function leaveStart(months: number, extraDays: number): Date {
@@ -74,8 +74,9 @@ base.forEach((b, i) => {
 test.describe.configure({ mode: 'serial' });
 
 test.describe('My Profile - Apply Leave', () => {
-  // Login + date retries + next-year calendar navigation can exceed the 30s default.
-  test.setTimeout(90_000);
+  // Login + date retries (each moves a week when the dates already have a leave) + next-year
+  // calendar navigation can far exceed the 30s default.
+  test.setTimeout(600_000);
 
   test.beforeEach(async ({ page }) => {
     await loginAs(page, USERNAME);
@@ -128,3 +129,5 @@ test.describe('My Profile - Apply Leave', () => {
     });
   }
 });
+
+
