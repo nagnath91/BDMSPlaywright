@@ -79,6 +79,14 @@ export class AddTimesheetDialog {
    */
   private async selectOption(trigger: Locator, optionText: string): Promise<void> {
     await trigger.click();
+
+    // Long lists (e.g. Trading Name) are virtual-scrolled behind a filter box,
+    // so the wanted option isn't in the DOM until it is searched for.
+    const search = this.page.getByRole('searchbox', { name: 'Search' });
+    if (await search.waitFor({ state: 'visible', timeout: 1000 }).then(() => true, () => false)) {
+      await search.fill(optionText);
+    }
+
     await this.page.getByRole('option', { name: optionText, exact: true }).click();
   }
 

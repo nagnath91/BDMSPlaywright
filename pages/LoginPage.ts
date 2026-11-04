@@ -13,6 +13,7 @@ export class LoginPage {
   readonly errorToast: Locator;
   readonly workLocationDialog: Locator;
   readonly workLocationSaveButton: Locator;
+  readonly termsDialog: Locator;
   readonly leaveConfirmYesButton: Locator;
 
   static readonly URL = 'http://10.10.20.41/auth/login';
@@ -34,6 +35,9 @@ export class LoginPage {
     // the dashboard with a "Work Location" modal that must be dismissed.
     this.workLocationDialog = page.getByRole('dialog', { name: 'Work Location' });
     this.workLocationSaveButton = this.workLocationDialog.getByRole('button', { name: 'Save Location' });
+    // Some users get a "Terms and Conditions" modal after pressing Login that
+    // must be ticked and agreed before the login continues.
+    this.termsDialog = page.getByRole('dialog', { name: 'Terms and Conditions' });
     // Leave confirmation pop-up (24th-26th of the month): confirm with "Yes".
     this.leaveConfirmYesButton = page
       .locator('[role="dialog"], [role="alertdialog"]')
@@ -112,8 +116,18 @@ export class LoginPage {
     }
   }
 
+  private async acceptTermsDialog(timeout: number): Promise<void> {
+    try {
+      await this.termsDialog.getByRole('checkbox').check({ timeout });
+      await this.termsDialog.getByRole('button', { name: 'AGREE' }).click({ timeout });
+      await this.termsDialog.waitFor({ state: 'hidden', timeout });
+    } catch {
+      // Dialog closed / page navigated while accepting - caller re-checks the outcome.
+    }
+  }
+
   private async waitForLoginOutcome(timeout: number): Promise<LoginOutcome> {
-    type RaceResult = LoginOutcome | 'work-location' | null;
+    type RaceResult = LoginOutcome | 'work-location' | 'terms' | null;
 
     const result = await Promise.race<RaceResult>([
       this.page
@@ -128,7 +142,16 @@ export class LoginPage {
         .waitFor({ state: 'visible', timeout })
         .then<RaceResult>(() => 'work-location')
         .catch(() => null),
+      this.termsDialog
+        .waitFor({ state: 'visible', timeout })
+        .then<RaceResult>(() => 'terms')
+        .catch(() => null),
     ]);
+
+    if (result === 'terms') {
+      await this.acceptTermsDialog(timeout);
+      return this.waitForLoginOutcome(timeout);
+    }
 
     if (result === 'work-location') {
       await this.dismissWorkLocation(timeout);
