@@ -24,16 +24,10 @@ import { readUsersFromCsv } from '../../utils/csvReader';
  * Override the CSV location with LOGIN_CSV_PATH. Use USER_LIMIT to cap
  * how many rows are turned into tests while iterating.
  *
- * This suite is meant to run in parallel. Playwright's config already has
- * fullyParallel: true, so recommend running it with a fixed worker count
- * tuned to what the target server can take, e.g.:
+ * This suite runs on a single worker, one user at a time (no parallel
+ * execution). Run it with:
  *
- *   npx playwright test tests/timesheet-punchout.spec.ts --project=chromium --workers=2
- *
- * Raise --workers (and USER_LIMIT while validating) only once the server
- * is confirmed to handle the extra concurrent load - this flow does more
- * per test (a multi-field form submission + a punch-out) than a plain
- * login/logout, so it is heavier per worker.
+ *   npm run test:login
  */
 const TIMESHEET_ENTRY: TimesheetEntry = {
   tradingName: 'Befree Pty Limited',
@@ -46,14 +40,15 @@ const TIMESHEET_ENTRY: TimesheetEntry = {
   notes: 'Test Automation',
 };
 
-const csvPath = process.env.LOGIN_CSV_PATH ?? path.resolve(__dirname, '../data/users.csv');
+const csvPath = process.env.LOGIN_CSV_PATH ?? path.resolve(__dirname, '../../data/users.csv');
 const allUsers = readUsersFromCsv(csvPath);
 
 const limit = Number(process.env.USER_LIMIT);
 const users = Number.isFinite(limit) && limit > 0 ? allUsers.slice(0, limit) : allUsers;
 
 test.describe('Add Timesheet and Punch Out (data-driven)', () => {
-  test.describe.configure({ mode: 'parallel' });
+  // Run the users one after another (no parallel execution).
+  test.describe.configure({ mode: 'default' });
 
   users.forEach(({ username, password }, index) => {
     test(`[${index + 1}/${users.length}] add timesheet and punch out - ${username}`, async ({ page }) => {

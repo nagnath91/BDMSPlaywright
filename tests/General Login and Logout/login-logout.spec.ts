@@ -21,7 +21,7 @@ import { readUsersFromCsv } from '../../utils/csvReader';
  *
  * Remove USER_LIMIT (or set it to 0) to run the full CSV.
  */
-const csvPath = process.env.LOGIN_CSV_PATH ?? path.resolve(__dirname, '../data/users.csv');
+const csvPath = process.env.LOGIN_CSV_PATH ?? path.resolve(__dirname, '../../data/users.csv');
 const allUsers = readUsersFromCsv(csvPath);
 
 const limit = Number(process.env.USER_LIMIT);

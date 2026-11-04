@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:ordered": "node scripts/run-ordered.js",
+    "test:login": "playwright test \"tests/General Login and Logout\" --project=chromium --workers=1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
